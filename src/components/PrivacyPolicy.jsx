@@ -13,7 +13,7 @@ export default function PrivacyPolicy() {
   };
 
   const wrapper = {
-    width: "70%",
+    width: "90%",
     maxWidth: "900px",
   };
 

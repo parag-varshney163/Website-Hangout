@@ -21,7 +21,7 @@ import FAQ from './components/FAQ';
 function App() {
   return (
     <BrowserRouter>
-      <div style={{ background: colors.gradientVertical, minHeight: "100vh" }}>
+      <div style={{ background: colors.gradientVertical, minHeight: "100vh",Width:"100%",overflowX:"hidden" }}>
         
         {/* Header will remain on all pages */}
         <Header />

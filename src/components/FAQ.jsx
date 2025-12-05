@@ -44,65 +44,35 @@ export default function FAQ() {
   ];
 
   return (
-    <div 
-      style={{
-        padding: "50px 80px",
-        minHeight: "100vh",
-        background: colors.gradientVertical,
-        color: colors.textPrimary,
-      }}
+    <div
+      className="min-h-screen px-5 py-12 md:px-20"
+      style={{ background: colors.gradientVertical, color: colors.textPrimary }}
     >
       {/* Heading */}
       <h1
-        style={{
-          fontSize: "40px",
-          marginBottom: "40px",
-          color: colors.accent,
-          fontWeight: "700",
-          textAlign: "center",
-        }}
+        className="text-4xl md:text-5xl font-bold text-center mb-10"
+        style={{ color: colors.accent }}
       >
         Frequently Asked Questions
       </h1>
 
       {/* FAQ Cards */}
-      <div style={{ maxWidth: "900px", margin: "0 auto" }}>
+      <div className="max-w-3xl w-full mx-auto space-y-5">
         {faqList.map((item, index) => (
           <div
             key={index}
-            style={{
-              marginBottom: "22px",
-              padding: "20px 28px",
-              borderRadius: "14px",
-              backgroundColor: colors.secondary,
-              border: `1px solid ${colors.cardBorder}`,
-              transition: "0.25s ease",
-            }}
-            onMouseEnter={(e) =>
-              (e.currentTarget.style.backgroundColor = colors.primary)
-            }
-            onMouseLeave={(e) =>
-              (e.currentTarget.style.backgroundColor = colors.secondary)
-            }
+            className="rounded-xl border p-6 transition-colors duration-300"
+            style={{ backgroundColor: colors.secondary, borderColor: colors.cardBorder }}
+            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = colors.primary)}
+            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = colors.secondary)}
           >
             <h3
-              style={{
-                color: colors.accent,
-                marginBottom: "10px",
-                fontSize: "20px",
-                fontWeight: "600",
-              }}
+              className="text-xl md:text-2xl font-semibold mb-2"
+              style={{ color: colors.accent }}
             >
               {item.q}
             </h3>
-
-            <p
-              style={{
-                color: colors.textSecondary,
-                lineHeight: "1.8",
-                fontSize: "16px",
-              }}
-            >
+            <p className="text-base md:text-lg leading-relaxed" style={{ color: colors.textSecondary }}>
               {item.a}
             </p>
           </div>

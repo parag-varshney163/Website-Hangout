@@ -13,7 +13,7 @@ export default function RefundPolicy() {
   };
 
   const wrapperStyle = {
-    width: "70%",
+    width: "90%",
     maxWidth: "900px",
   };
 

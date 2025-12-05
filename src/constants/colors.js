@@ -27,5 +27,6 @@ const colors = {
   Blue:"#87CEEB",
   gradientVertical: `linear-gradient(to bottom, #0b0f19, #11162a)`,
   gradientDiagonal: `linear-gradient(to bottom right, #1a1f36, #4e54c8)`,
+  
 }
 export default colors;

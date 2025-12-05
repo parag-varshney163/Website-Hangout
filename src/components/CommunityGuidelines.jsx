@@ -13,7 +13,7 @@ export default function CommunityGuidelines() {
   };
 
   const wrapper = {
-    width: "70%",
+    width: "90%",
     maxWidth: "900px",
   };
 

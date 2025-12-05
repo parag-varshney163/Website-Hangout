@@ -1,4 +1,4 @@
-import { Trophy, PhoneCall, Users, Shield, BookMarked, IndianRupee } from "lucide-react";
+import { Trophy, PhoneCall, Users, Shield, BookMarked, IndianRupee, } from "lucide-react";
 import React from "react";
 
 import { FeatureCard } from "./FeatureCard";
@@ -7,39 +7,43 @@ import colors from "../constants/colors";
 
 export default function WhyChatSpark() {
   return (
-    <div id="feature" style={{ width: "100%", padding: "60px 80px" }}>
+    <div
+      id="feature"
+      className="w-full px-6 md:px-16 lg:px-24 py-16"
+      style={{ background: "transparent",overflowX:"hidden" }}
+    >
       {/* Title */}
       <h2
+        className="text-center font-bold"
         style={{
-          fontSize: "46px",
-          fontWeight: "700",
-          color: "white",
-          textAlign: "center",
+          fontSize: "42px",
+          color: colors.textPrimary,
         }}
       >
         Why <span style={{ color: colors.accent }}>ChatSpark?</span>
       </h2>
 
       <p
+        className="text-center mt-3 mb-12"
         style={{
-          textAlign: "center",
           color: colors.accent,
           fontSize: "18px",
-          marginTop: "10px",
-          marginBottom: "60px",
         }}
       >
-        Built for India’s youth — fast, fun, and super safe. No cringe, only connection.
+        Built for India’s youth — fast, fun, and super safe. No cringe, only
+        connection.
       </p>
 
       {/* Cards Grid */}
       <div
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          gap: "30px",
-          justifyContent: "center",
-        }}
+        className="
+          grid 
+          grid-cols-1 
+          sm:grid-cols-2 
+          lg:grid-cols-3 
+          gap-6 
+          place-items-center
+        "
       >
         <FeatureCard
           icon={Trophy}
@@ -80,4 +84,3 @@ export default function WhyChatSpark() {
     </div>
   );
 }
-

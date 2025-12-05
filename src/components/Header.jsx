@@ -1,7 +1,7 @@
 import { Link as RouterLink, useNavigate, useLocation } from "react-router-dom";
+import { Menu, X, Download, ArrowUpRight } from "lucide-react";
 import { Link as ScrollLink, scroller } from "react-scroll";
-import { ArrowUpRight, Download } from "lucide-react";
-import React from "react";
+import React, { useState } from "react";
 
 import colors from "../constants/colors";
 import logo from "../assets/logo.webp";
@@ -11,6 +11,7 @@ import Button from "./ui/Buttton";
 export default function Header() {
   const navigate = useNavigate();
   const location = useLocation();
+  const [open, setOpen] = useState(false);
 
   const navItems = [
     { label: "Feature", type: "scroll", to: "feature" },
@@ -21,10 +22,7 @@ export default function Header() {
 
   const handleScrollNav = (target) => {
     if (location.pathname !== "/") {
-      // 1️⃣ Navigate back to home first
       navigate("/");
-
-      // 2️⃣ Wait a bit so page loads, then smooth scroll
       setTimeout(() => {
         scroller.scrollTo(target, {
           smooth: true,
@@ -36,82 +34,54 @@ export default function Header() {
   };
 
   return (
-    <div
-      style={{
-        width: "100%",
-        padding: "22px 40px",
-        background: "transparent",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-      }}
+    <header
+      className="w-full flex items-center justify-between px-6 md:px-12 py-5"
+      style={{ background: "transparent",overflowX:"hidden" }}
     >
-      {/* LEFT — Logo */}
-      <div style={{ alignItems: "center", gap: "14px" }}>
-        <img src={logo} alt="logo" style={{ height: "80px", width: "80px" }} />
-      </div>
+      {/* LOGO */}
+      <img src={logo} alt="logo" className=" h-16 w-16 md:h-26 md:w-26" />
 
-      {/* CENTER — Navigation */}
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          gap: "40px",
-          marginLeft: "120px",
-        }}
-      >
+      {/* DESKTOP MENU */}
+      <nav className="hidden md:flex items-center gap-10">
         {navItems.map((item) =>
           item.type === "scroll" ? (
             location.pathname === "/" ? (
-              // If already on home → normal react-scroll
               <ScrollLink
                 key={item.label}
                 to={item.to}
-                smooth={true}
-                duration={500}
+                smooth
                 offset={-80}
-                style={{
-                  color: colors.textPrimary,
-                  fontSize: "18px",
-                  cursor: "pointer",
-                }}
+                duration={500}
+                className="cursor-pointer text-lg"
+                style={{ color: colors.textPrimary }}
               >
                 {item.label}
               </ScrollLink>
             ) : (
-              // If on another page → navigate back & scroll
               <span
                 key={item.label}
                 onClick={() => handleScrollNav(item.to)}
-                style={{
-                  color: colors.textPrimary,
-                  fontSize: "18px",
-                  cursor: "pointer",
-                }}
+                className="cursor-pointer text-lg"
+                style={{ color: colors.textPrimary }}
               >
                 {item.label}
               </span>
             )
           ) : (
-            // Page navigation
             <RouterLink
               key={item.label}
               to={item.to}
-              style={{
-                color: colors.textPrimary,
-                fontSize: "18px",
-                cursor: "pointer",
-                textDecoration: "none",
-              }}
+              className="text-lg"
+              style={{ color: colors.textPrimary }}
             >
               {item.label}
             </RouterLink>
           )
         )}
-      </div>
+      </nav>
 
-      {/* RIGHT — Buttons */}
-      <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
+      {/* BUTTONS (DESKTOP) */}
+      <div className="hidden md:flex items-center gap-4">
         <Button variant="ghost" size="md" icon={Download}>
           Download
         </Button>
@@ -120,13 +90,93 @@ export default function Header() {
           size="md"
           variant="custom"
           bg={colors.accent}
-          icon={ArrowUpRight}
           text="#000"
+          icon={ArrowUpRight}
           onClick={() => navigate("/join-us")}
         >
           Become a Creator
         </Button>
       </div>
-    </div>
+
+      {/* MOBILE MENU BUTTON */}
+      <button className="md:hidden" onClick={() => setOpen(!open)}>
+        {open ? (
+          <X size={32} style={{ color: colors.textPrimary }} />
+        ) : (
+          <Menu size={32} style={{ color: colors.textPrimary }} />
+        )}
+      </button>
+
+      {/* MOBILE DROPDOWN MENU */}
+      {open && (
+        <div
+          className="absolute top-20 left-0 w-full flex flex-col gap-6 px-6 py-6 md:hidden"
+          style={{
+            background: colors.primary,
+            borderTop: `1px solid ${colors.cardBorder}`,
+          }}
+        >
+          {navItems.map((item) =>
+            item.type === "scroll" ? (
+              location.pathname === "/" ? (
+                <ScrollLink
+                  key={item.label}
+                  to={item.to}
+                  smooth
+                  offset={-80}
+                  duration={500}
+                  className="text-xl"
+                  style={{ color: colors.textPrimary }}
+                  onClick={() => setOpen(false)}
+                >
+                  {item.label}
+                </ScrollLink>
+              ) : (
+                <span
+                  key={item.label}
+                  onClick={() => {
+                    handleScrollNav(item.to);
+                    setOpen(false);
+                  }}
+                  className="text-xl cursor-pointer"
+                  style={{ color: colors.textPrimary }}
+                >
+                  {item.label}
+                </span>
+              )
+            ) : (
+              <RouterLink
+                key={item.label}
+                to={item.to}
+                className="text-xl"
+                style={{ color: colors.textPrimary }}
+                onClick={() => setOpen(false)}
+              >
+                {item.label}
+              </RouterLink>
+            )
+          )}
+
+          {/* MOBILE BUTTONS */}
+          <Button variant="ghost" size="md" icon={Download}>
+            Download
+          </Button>
+
+          <Button
+            size="md"
+            variant="custom"
+            bg={colors.accent}
+            text="#000"
+            icon={ArrowUpRight}
+            onClick={() => {
+              navigate("/join-us");
+              setOpen(false);
+            }}
+          >
+            Become a Creator
+          </Button>
+        </div>
+      )}
+    </header>
   );
 }

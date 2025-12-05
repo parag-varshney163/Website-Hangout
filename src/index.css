@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+:root {
+  --accent: #FFD700;
+}
+html, body {
+  overflow-x: hidden !important;
+}
+

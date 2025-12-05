@@ -1,340 +1,314 @@
 import { Linkedin, Instagram, Facebook } from "lucide-react";
 import { Link as ScrollLink } from "react-scroll";
-import { span } from "framer-motion/client";
 import { Link } from "react-router-dom";
-import React, { lazy } from "react";
+import React from "react";
 
 import playstore from "../assets/playstore.webp";
 import Vector from "../assets/Vector.webp";
 import colors from "../constants/colors";
 import logo from "../assets/logo.webp";
-import FAQ from "./FAQ";
 
 
 export default function DownloadSection() {
-    const socialItem = {
+  return (
+    <div
+      style={{
+        width: "100%",
+        padding: "64px 0",
         display: "flex",
+        flexDirection: "column",
         alignItems: "center",
-        gap: "10px",
-        cursor: "pointer",
-    };
+        overflowX:"hidden"
+      }}
+    >
+      {/* TITLE */}
+      <h2
+        style={{
+          color: "white",
+          fontSize: "42px",
+          fontWeight: "700",
+          marginBottom: "8px",
+          textAlign: "center",
+        }}
+      >
+        Download The <span style={{ color: colors.accent }}>App!!</span>
+      </h2>
 
-    return (
+      <p
+        style={{
+          color: colors.accent,
+          fontSize: "20px",
+          marginBottom: "48px",
+        }}
+      >
+        Available on Google Play and App Store
+      </p>
+
+      {/* DOWNLOAD BUTTONS */}
+      <div
+        style={{
+          display: "flex",
+          gap: "32px",
+          marginBottom: "96px",
+          flexWrap: "wrap",
+          justifyContent: "center",
+        }}
+      >
+        {/* GOOGLE PLAY */}
         <div
-            style={{
-                width: "100%",
-                padding: "60px 0 40px 0",
+          style={{
+            backgroundColor: colors.secondary,
+            border: `1px solid ${colors.cardBorder}`,
+            borderRadius: "12px",
+            padding: "16px 28px",
+            display: "flex",
+            alignItems: "center",
+            gap: "12px",
+            cursor: "pointer",
+            transition: "0.3s",
+          }}
+          onMouseEnter={(e) =>
+            (e.currentTarget.style.backgroundColor = colors.hover)
+          }
+          onMouseLeave={(e) =>
+            (e.currentTarget.style.backgroundColor = colors.secondary)
+          }
+        >
+          <img src={playstore} width={34} alt="Google Play" />
+          <div style={{ display: "flex", flexDirection: "column" }}>
+            <span style={{ color: colors.textSecondary, fontSize: "12px" }}>
+              Download Now
+            </span>
+            <span
+              style={{
+                color: "white",
+                fontSize: "18px",
+                fontWeight: "600",
+              }}
+            >
+              GooglePlay
+            </span>
+          </div>
+        </div>
+
+        {/* APP STORE */}
+        <div
+          style={{
+            backgroundColor: colors.secondary,
+            border: `1px solid ${colors.cardBorder}`,
+            borderRadius: "12px",
+            padding: "16px 32px",
+            display: "flex",
+            alignItems: "center",
+            gap: "12px",
+            cursor: "pointer",
+            transition: "0.3s",
+          }}
+          onMouseEnter={(e) =>
+            (e.currentTarget.style.backgroundColor = colors.hover)
+          }
+          onMouseLeave={(e) =>
+            (e.currentTarget.style.backgroundColor = colors.secondary)
+          }
+        >
+          <img src={Vector} width={34} alt="App Store" />
+          <div style={{ display: "flex", flexDirection: "column" }}>
+            <span style={{ color: colors.textSecondary, fontSize: "12px" }}>
+              Download Now
+            </span>
+            <span
+              style={{
+                color: "white",
+                fontSize: "18px",
+                fontWeight: "600",
+              }}
+            >
+              AppStore
+            </span>
+          </div>
+        </div>
+      </div>
+
+      {/* FOOTER SECTION */}
+      <div
+        style={{
+          width: "90%",
+          display: "flex",
+          justifyContent: "space-between",
+          flexWrap: "wrap",
+          gap: "40px",
+        }}
+      >
+        {/* LEFT SECTION */}
+        <div style={{ display: "flex", gap: "32px" }}>
+          {/* Logo + tagline */}
+          <div style={{ display: "flex", flexDirection: "column" }}>
+            <img src={logo} width={120} alt="Chatspark Logo" />
+            {/* <span
+              style={{
+                color: colors.accent,
+                fontSize: "13px",
+                marginTop: "8px",
+                marginLeft: "4px",
+              }}
+            >
+              Your Daily Spark Zone
+            </span> */}
+          </div>
+
+          {/* FOLLOW US */}
+          <div style={{ display: "flex", flexDirection: "column" }}>
+            <h4
+              style={{
+                color: colors.accent,
+                fontSize: "18px",
+                fontWeight: "600",
+                marginBottom: "12px",
+              }}
+            >
+              Follow Us
+            </h4>
+
+            <div
+              style={{
                 display: "flex",
                 flexDirection: "column",
-                alignItems: "center",
-            }}
-        >
-            {/* Title */}
-            <h2
-                style={{
-                    fontSize: "42px",
-                    color: "white",
-                    fontWeight: "700",
-                    marginBottom: "8px",
-                }}
+                color: "white",
+                gap: "12px",
+                fontSize: "15px",
+                cursor: "pointer",
+              }}
             >
-                Download The <span style={{ color: colors.accent }}>App!!</span>
-            </h2>
-
-            {/* Subtitle */}
-            <p
-                style={{
-                    fontSize: "20px",
-                    color: colors.accent,
-                    marginBottom: "45px",
-                }}
-            >
-                Available on Google Play and App Store
-            </p>
-
-            {/* Download Buttons */}
-            <div
-                style={{
-                    display: "flex",
-                    gap: "35px",
-                    marginBottom: "100px",
-                }}
-            >
-                {/* Google Play */}
-                <div
+              {[["LinkedIn", Linkedin], ["Instagram", Instagram], ["Facebook", Facebook]].map(
+                ([label, Icon], idx) => (
+                  <div
+                    key={idx}
                     style={{
-                        backgroundColor: colors.secondary,
-                        borderRadius: "14px",
-                        padding: "14px 30px",
-                        display: "flex",
-                        alignItems: "center",
-                        gap: "12px",
-                        border: `1px solid ${colors.cardBorder}`,
-                        cursor: "pointer",
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "8px",
+                      transition: "0.3s",
                     }}
-                >
-                    <img src={playstore} width={34} alt="Google Play" loading={lazy} />
-                    <div style={{ display: "flex", flexDirection: "column" }}>
-                        <span
-                            style={{
-                                color: colors.textSecondary,
-                                fontSize: "12px",
-                            }}
-                        >
-                            Download Now
-                        </span>
-                        <span
-                            style={{
-                                color: "white",
-                                fontSize: "18px",
-                                fontWeight: "600",
-                            }}
-                        >
-                            GooglePlay
-                        </span>
-                    </div>
-                </div>
-
-                {/* App Store */}
-                <div
-                    style={{
-                        backgroundColor: colors.secondary,
-                        borderRadius: "14px",
-                        padding: "14px 34px",
-                        display: "flex",
-                        alignItems: "center",
-                        gap: "12px",
-                        border: `1px solid ${colors.cardBorder}`,
-                        cursor: "pointer",
-                    }}
-                >
-                    <img src={Vector} width={34} alt="App Store" loading={lazy} />
-                    <div style={{ display: "flex", flexDirection: "column" }}>
-                        <span
-                            style={{
-                                color: colors.textSecondary,
-                                fontSize: "12px",
-                            }}
-                        >
-                            Download Now
-                        </span>
-                        <span
-                            style={{
-                                color: "white",
-                                fontSize: "18px",
-                                fontWeight: "600",
-                            }}
-                        >
-                            AppStore
-                        </span>
-                    </div>
-                </div>
+                    onMouseEnter={(e) =>
+                      (e.currentTarget.style.color = colors.accent)
+                    }
+                    onMouseLeave={(e) => (e.currentTarget.style.color = "white")}
+                  >
+                    <Icon size={18} /> <span>{label}</span>
+                  </div>
+                )
+              )}
             </div>
-
-            {/* Footer Section */}
-            <div
-                style={{
-                    width: "90%",
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "flex-start",
-                    marginTop: "-20px",
-                }}
-            >
-                {/* LEFT: Logo + Tagline + Follow Us */}
-                <div style={{ display: "flex", alignItems: "flex-start", gap: "30px" }}>
-                    {/* Logo + Tagline */}
-                    <div style={{ display: "flex", flexDirection: "column" }}>
-                        <img
-                            src={logo}
-                            width={120}
-                            alt="ChatSpark Logo"
-                            style={{ marginBottom: "6px" }}
-                            loading={lazy}
-                        />
-
-                        <span
-                            style={{
-                                color: colors.accent,
-                                fontSize: "13px",
-                                marginLeft: "3px",
-                                marginBottom: "20px",
-                            }}
-                        >
-                            Your Daily Spark Zone
-                        </span>
-                    </div>
-
-                    {/* Follow Us */}
-                    <div style={{ display: "flex", flexDirection: "column" }}>
-                        <h4
-                            style={{
-                                color: colors.accent,
-                                fontSize: "18px",
-                                marginBottom: "14px",
-                                fontWeight: "600",
-                            }}
-                        >
-                            Follow Us
-                        </h4>
-
-                        <div
-                            style={{
-                                color: "white",
-                                display: "flex",
-                                flexDirection: "column",
-                                gap: "12px",
-                                fontSize: "15px",
-                            }}
-                        >
-                            <div style={socialItem}>
-                                <Linkedin size={18} />
-                                <span>LinkedIn</span>
-                            </div>
-
-                            <div style={socialItem}>
-                                <Instagram size={18} />
-                                <span>Instagram</span>
-                            </div>
-
-                            <div style={socialItem}>
-                                <Facebook size={18} />
-                                <span>Facebook</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                {/* PRODUCT */}
-                <div>
-                    <h4
-                        style={{
-                            color: colors.accent,
-                            fontSize: "18px",
-                            marginBottom: "14px",
-                            fontWeight: "600",
-                        }}
-                    >
-                        Product
-                    </h4>
-
-                    <div
-                        style={{
-                            color: "white",
-                            display: "flex",
-                            flexDirection: "column",
-                            gap: "10px",
-                            fontSize: "15px",
-                            cursor: "pointer",
-                        }}
-                    >
-                        <ScrollLink
-                            to="feature"
-                            smooth={true}
-                            duration={600}
-                            offset={-80}
-                            spy={true}
-                            component="span"
-                            style={{ cursor: "pointer" }}
-                        >
-                            Feature
-                        </ScrollLink>
-                        <span>Download</span>
-                        <Link to="/join-us"><span>For Creators</span></Link>
-                    </div>
-                </div>
-
-                {/* SUPPORT */}
-                <div>
-                    <h4
-                        style={{
-                            color: colors.accent,
-                            fontSize: "18px",
-                            marginBottom: "14px",
-                            fontWeight: "600",
-                        }}
-                    >
-                        Support
-                    </h4>
-
-                    <div
-                        style={{
-                            color: "white",
-                            display: "flex",
-                            flexDirection: "column",
-                            gap: "10px",
-                            fontSize: "15px",
-                        }}
-                    >
-                        <Link to="/faq"><span>FAQ</span></Link>
-                        <ScrollLink
-                            to="safety"
-                            smooth={true}
-                            duration={600}
-                            offset={-80}
-                            spy={true}
-                            component="span"
-                            style={{ cursor: "pointer" }}
-                        >
-                            Safety
-                        </ScrollLink>
-                        <Link to="/refund-policy"><span>Refund Policy</span></Link>
-                    </div>
-                </div>
-
-                {/* LEGAL */}
-                <div>
-                    <h4
-                        style={{
-                            color: colors.accent,
-                            fontSize: "18px",
-                            marginBottom: "14px",
-                            fontWeight: "600",
-                        }}
-                    >
-                        Legal
-                    </h4>
-
-                    <div
-                        style={{
-                            color: "white",
-                            display: "flex",
-                            flexDirection: "column",
-                            gap: "10px",
-                            fontSize: "15px",
-                            cursor: "pointer",
-                        }}
-                    >
-                        <Link to="/terms"><span>Terms</span></Link>
-                        <Link to="/privacy-policy"><span>Privacy</span></Link>
-                        <Link to="/community-guidelines"><span>Community Guidelines</span></Link>
-                    </div>
-                </div>
-            </div>
-
-            {/* Email + Address */}
-            <p
-                style={{
-                    marginTop: "70px",
-                    color: "white",
-                    fontSize: "15px",
-                    textAlign: "center",
-                }}
-            >
-                support@chatspark.in &nbsp; | &nbsp; Sector-2, Gautam Buddha Nagar,
-                Uttar Pradesh 201301
-            </p>
-
-            {/* Copyright */}
-            <p
-                style={{
-                    marginTop: "16px",
-                    color: colors.accent,
-                    fontSize: "14px",
-                }}
-            >
-                © 2025 HangoutX Media Private Limited. All rights reserved.
-            </p>
+          </div>
         </div>
-    );
+
+        {/* PRODUCT */}
+        <FooterColumn
+          title="Product"
+          links={[
+            { label: "Feature", scroll: "feature" },
+            { label: "Download" },
+            { label: "For Creators", route: "/join-us" },
+          ]}
+        />
+
+        {/* SUPPORT */}
+        <FooterColumn
+          title="Support"
+          links={[
+            { label: "FAQ", route: "/faq" },
+            { label: "Safety", scroll: "safety" },
+            { label: "Refund Policy", route: "/refund-policy" },
+          ]}
+        />
+
+        {/* LEGAL */}
+        <FooterColumn
+          title="Legal"
+          links={[
+            { label: "Terms", route: "/terms" },
+            { label: "Privacy", route: "/privacy-policy" },
+            { label: "Community Guidelines", route: "/community-guidelines" },
+          ]}
+        />
+      </div>
+
+      {/* EMAIL + ADDRESS */}
+      <p
+        style={{
+          marginTop: "64px",
+          color: "white",
+          fontSize: "15px",
+          textAlign: "center",
+        }}
+      >
+        support@chatspark.in &nbsp; | &nbsp; Sector-2, Gautam Buddha Nagar,
+        Uttar Pradesh 201301
+      </p>
+
+      {/* COPYRIGHT */}
+      <p
+        style={{
+          marginTop: "16px",
+          color: colors.accent,
+          fontSize: "14px",
+        }}
+      >
+        © 2025 HangoutX Media Private Limited. All rights reserved.
+      </p>
+    </div>
+  );
 }
+
+function FooterColumn({ title, links }) {
+  return (
+    <div>
+      <h4
+        style={{
+          color: colors.accent,
+          fontSize: "18px",
+          fontWeight: "600",
+          marginBottom: "12px",
+        }}
+      >
+        {title}
+      </h4>
+
+      <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+        {links.map((item, idx) =>
+          item.route ? (
+            <Link key={idx} to={item.route} style={linkStyle}>
+              {item.label}
+            </Link>
+          ) : item.scroll ? (
+            <ScrollLink
+              key={idx}
+              to={item.scroll}
+              smooth
+              duration={600}
+              offset={-80}
+              spy
+              style={linkStyle}
+            >
+              {item.label}
+            </ScrollLink>
+          ) : (
+            <span key={idx} style={linkStyle}>
+              {item.label}
+            </span>
+          )
+        )}
+      </div>
+    </div>
+  );
+}
+
+const linkStyle = {
+  color: "white",
+  fontSize: "15px",
+  cursor: "pointer",
+  transition: "0.3s",
+  textDecoration: "none",
+  display: "block",
+  width: "fit-content",
+};
