@@ -53,14 +53,15 @@ export default function JoinUs() {
   };
 
   return (
-    <div
+    <div className="md:-mt-[60px]"
       style={{
         minHeight: "100vh",
         width: "100%",
-        background: colors.gradientVertical,
-        padding: "40px 20px",
+        
+        padding: "1px 20px",
         display: "flex",
         justifyContent: "center",
+        
       }}
     >
       <div
