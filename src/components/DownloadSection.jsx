@@ -18,7 +18,7 @@ export default function DownloadSection() {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        overflowX:"hidden"
+        overflowX: "hidden"
       }}
     >
       {/* TITLE */}
@@ -179,10 +179,22 @@ export default function DownloadSection() {
                 cursor: "pointer",
               }}
             >
-              {[["LinkedIn", Linkedin], ["Instagram", Instagram], ["Facebook", Facebook]].map(
-                ([label, Icon], idx) => (
+              {[
+                ["LinkedIn", Linkedin, "https://www.linkedin.com/company/chatsparkk/"],
+                ["Instagram", Instagram, "https://www.instagram.com/chatsparkk?igsh=dTBsZGZ0ZGtwb3Zh"],
+                ["Facebook", Facebook, "https://www.facebook.com/people/ChatSpark/61584596734557/"],
+              ].map(([label, Icon, url], idx) => (
+                <a
+                  key={idx}
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    textDecoration: "none",
+                    color: "white",
+                  }}
+                >
                   <div
-                    key={idx}
                     style={{
                       display: "flex",
                       alignItems: "center",
@@ -192,12 +204,16 @@ export default function DownloadSection() {
                     onMouseEnter={(e) =>
                       (e.currentTarget.style.color = colors.accent)
                     }
-                    onMouseLeave={(e) => (e.currentTarget.style.color = "white")}
+                    onMouseLeave={(e) =>
+                      (e.currentTarget.style.color = "white")
+                    }
                   >
-                    <Icon size={18} /> <span>{label}</span>
+                    <Icon size={18} />
+                    <span>{label}</span>
                   </div>
-                )
-              )}
+                </a>
+              ))}
+
             </div>
           </div>
         </div>
