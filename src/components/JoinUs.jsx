@@ -58,9 +58,10 @@ export default function JoinUs() {
         minHeight: "100vh",
         width: "100%",
         
-        padding: "1px 20px",
+        padding: "16px 20px",
         display: "flex",
         justifyContent: "center",
+        overflowX:"hidden"
         
       }}
     >
@@ -84,7 +85,7 @@ export default function JoinUs() {
         </div>
 
         {/* RIGHT FORM */}
-        <div style={{ flex: 1, minWidth: "360px" }}>
+        <div className="min-w-100%" style={{ flex: 1,  }}>
           <h1
             style={{
               fontSize: "44px",
