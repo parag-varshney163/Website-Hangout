@@ -76,6 +76,8 @@ export default function PrivacyPolicy() {
 
         {/* Intro */}
         <div style={section}>
+          <p className="text-center" style={subHeading}>Effective Date: 1st December, 2025 <br/>
+              Last Updated: 1st December, 2025</p>
           <p style={text}>
             This Privacy Policy (“Policy”) explains how{" "}
             <strong style={{ color: colors.textPrimary }}>
@@ -243,6 +245,9 @@ export default function PrivacyPolicy() {
               acquisition, or sale, user data may be transferred under the same
               privacy terms.
             </li>
+            <li>
+              <strong>InterNational Transfers:</strong> Some of our service providers (e.g., cloud storage, analytics) may be located outside India. We ensure such transfers comply with applicable data protection laws and use appropriate safeguards.
+            </li>
           </ul>
         </div>
 
@@ -260,6 +265,9 @@ export default function PrivacyPolicy() {
               <strong>Transaction Data:</strong> CS Coin transactions and
               payment records are retained as required by financial and audit
               regulations.
+            </li>
+            <li>
+              <strong>Call Logs:</strong> Call logs and related metadata are retained for 90 days for safety and quality purposes.
             </li>
             <li>
               <strong>Usage and Logs:</strong> Non-personal, aggregated
@@ -284,12 +292,10 @@ export default function PrivacyPolicy() {
               reasonable timeframe, except where retention is required by law.
             </li>
             <li>
-              <strong>Consent Withdrawal:</strong> You may withdraw consent for
-              data usage (e.g., marketing or analytics) through in-app settings.
+              <strong>Consent Withdrawal:</strong> You may withdraw consent for data usage (e.g., marketing or analytics) through in-app settings. Where processing is based on consent, you have the right to withdraw it at any time.
             </li>
             <li>
-              <strong>Grievance Redressal:</strong> You may report content or
-              raise data-related concerns through the in-app tools or{" "}
+              <strong>Grievance Redressal:</strong> You may report content or raise data-related concerns through the in-app chat or support@chatspark.in.
               <a style={accentLink} href="https://support.chatspark.in">
                 https://support.chatspark.in
               </a>
@@ -302,11 +308,7 @@ export default function PrivacyPolicy() {
         <div style={section}>
           <h2 style={heading}>6. Security</h2>
           <p style={text}>
-            We employ industry-standard measures to safeguard your data,
-            including encryption, secure servers, and controlled access.
-            However, no digital system is entirely immune from risks. You are
-            advised to maintain security on your own device (e.g., updated
-            antivirus software).
+            We employ industry-standard measures to safeguard your data, including encryption (both in transit and at rest), secure servers, and controlled access. However, no digital system is entirely immune from risks. You are advised to maintain security on your own device (e.g., updated antivirus software). In the event of a data breach that may cause harm to your rights, we will notify affected users and the Data Protection Board of India within the timeframe prescribed by law.
           </p>
         </div>
 
@@ -359,10 +361,10 @@ export default function PrivacyPolicy() {
             </a>
             . We aim to address all valid complaints within{" "}
             <strong style={{ color: colors.textPrimary }}>15 days</strong>.
-            Transparency reports will be published periodically at{" "}
+            {/* Transparency reports will be published periodically at{" "}
             <a style={accentLink} href="https://help.chatspark.in/transparency-report">
               https://help.chatspark.in/transparency-report
-            </a>
+            </a> */}
             .
           </p>
         </div>
