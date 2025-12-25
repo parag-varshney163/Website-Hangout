@@ -297,7 +297,7 @@ export default function PrivacyPolicy() {
             <li>
               <strong>Grievance Redressal:</strong> You may report content or raise data-related concerns through the in-app chat or support@chatspark.in.
               <a style={accentLink} href="https://support.chatspark.in">
-                https://support.chatspark.in
+                
               </a>
               .
             </li>
@@ -332,10 +332,16 @@ export default function PrivacyPolicy() {
             to review.
           </p>
         </div>
+        <div style={section}>
+          <h2 style={heading}>9. Children's Privacy</h2>
+          <p style={text}>
+           ChatSpark is intended exclusively for users aged 18 years and above. We do not knowingly collect, use, or share personal information from individuals under 18. If we become aware that a user is under 18, we will immediately delete their account and associated data. If you believe a minor has provided us with personal information, please contact us at grievance@chatspark.in.
+          </p>
+        </div>
 
         {/* 9. Grievance */}
         <div style={section}>
-          <h2 style={heading}>9. Grievance Redressal Mechanism</h2>
+          <h2 style={heading}>10. Grievance Redressal Mechanism</h2>
           <p style={text}>
             If you have any concerns about data safety, privacy, or Platform
             usage, please contact:
@@ -356,8 +362,8 @@ export default function PrivacyPolicy() {
 
           <p style={text}>
             You can also reach us via{" "}
-            <a style={accentLink} href="https://support.chatspark.in">
-              https://support.chatspark.in
+            <a style={accentLink} >
+              support@chatspark.in
             </a>
             . We aim to address all valid complaints within{" "}
             <strong style={{ color: colors.textPrimary }}>15 days</strong>.
@@ -371,7 +377,7 @@ export default function PrivacyPolicy() {
 
         {/* 10. Changes */}
         <div style={section}>
-          <h2 style={heading}>10. Changes to This Policy</h2>
+          <h2 style={heading}>11. Changes to This Policy</h2>
           <p style={text}>
             We may update this Policy periodically to reflect new features,
             legal requirements, or service changes. Users will be notified of
@@ -381,7 +387,7 @@ export default function PrivacyPolicy() {
 
         {/* 11. Contact */}
         <div style={section}>
-          <h2 style={heading}>11. Contact Us</h2>
+          <h2 style={heading}>12. Contact Us</h2>
           <p style={text}>
             For general questions about this Policy, contact:
             <br />
