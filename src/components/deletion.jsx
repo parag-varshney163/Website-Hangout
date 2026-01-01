@@ -41,7 +41,7 @@ export default function DeletionPolicy() {
       content: [
         "Data download is available on request.",
         "You can request a copy of your account data by emailing support@chatspark.in within 7 days of submitting your deletion request.",
-        "Data provided may include profile information, posts, comments, direct messages, call records, and information shared during registration.",
+        "We'll provide data related to your account, including profile details, transaction history, and other information you provided during registration.",
         "Important notes:",
         "• Requests must be made within 7 days of deletion request",
         "• Email must be sent from your registered email address",
