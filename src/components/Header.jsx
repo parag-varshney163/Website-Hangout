@@ -18,7 +18,7 @@ export default function Header() {
     { label: "Creators", type: "route", to: "/join-us" },
     { label: "Safety", type: "scroll", to: "safety" },
     { label: "FAQ", type: "route", to: "/faq" },
-    { label: "Acount Deletion", type: "route", to: "/deletion" },
+    { label: "Account Deletion", type: "route", to: "/deletion" },
   ];
 
   const handleScrollNav = (target) => {
