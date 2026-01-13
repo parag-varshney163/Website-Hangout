@@ -37,7 +37,7 @@ export default function Header() {
   return (
     <header
       className="w-full flex items-center justify-between px-6 md:px-12 py-5"
-      style={{ background: "transparent",overflowX:"hidden" }}
+      style={{ background: "transparent", overflowX: "hidden" }}
     >
       {/* LOGO */}
       <img src={logo} alt="logo" className=" h-16 w-16 md:h-26 md:w-26" />
@@ -83,9 +83,20 @@ export default function Header() {
 
       {/* BUTTONS (DESKTOP) */}
       <div className="hidden md:flex items-center gap-4">
-        <Button variant="ghost" size="md" icon={Download}>
+        <Button
+          variant="ghost"
+          size="md"
+          icon={Download}
+          onClick={() =>
+            window.open(
+              "https://play.google.com/store/apps/details?id=com.chatspark.user&hl=en_IN",
+              "_blank"
+            )
+          }
+        >
           Download
         </Button>
+
 
         <Button
           size="md"
@@ -159,9 +170,21 @@ export default function Header() {
           )}
 
           {/* MOBILE BUTTONS */}
-          <Button variant="ghost" size="md" icon={Download}>
+          <Button
+            variant="ghost"
+            size="md"
+            icon={Download}
+            onClick={() => {
+              window.open(
+                "https://play.google.com/store/apps/details?id=com.chatspark.user&hl=en_IN",
+                "_blank"
+              );
+              setOpen(false);
+            }}
+          >
             Download
           </Button>
+
 
           <Button
             size="md"

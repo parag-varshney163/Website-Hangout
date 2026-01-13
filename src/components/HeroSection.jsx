@@ -31,7 +31,7 @@ export default function HeroSection() {
         justifyContent: "space-between",
         alignItems: "center",
         gap: isMobile ? "40px" : "20px",
-        overflowX:"hidden"
+        overflowX: "hidden"
       }}
     >
       {/* LEFT SECTION */}
@@ -79,9 +79,20 @@ export default function HeroSection() {
             flexWrap: "wrap",
           }}
         >
-          <Button variant="ghost" size="lg" icon={Download}>
+          <Button
+            variant="ghost"
+            size="lg"
+            icon={Download}
+            onClick={() =>
+              window.open(
+                "https://play.google.com/store/apps/details?id=com.chatspark.user&hl=en_IN",
+                "_blank"
+              )
+            }
+          >
             Get The App
           </Button>
+
 
           <Button
             variant="custom"
