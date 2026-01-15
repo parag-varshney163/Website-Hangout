@@ -41,7 +41,7 @@ export default function DownloadSection() {
           marginBottom: "48px",
         }}
       >
-        Available on Google Play and App Store
+        Available on Google Play Store
       </p>
 
       {/* DOWNLOAD BUTTONS */}
@@ -73,6 +73,12 @@ export default function DownloadSection() {
           onMouseLeave={(e) =>
             (e.currentTarget.style.backgroundColor = colors.secondary)
           }
+          onClick={() =>
+            window.open(
+              "https://play.google.com/store/apps/details?id=com.chatspark.user&hl=en_IN",
+              "_blank"
+            )
+          }
         >
           <img src={playstore} width={34} alt="Google Play" />
           <div style={{ display: "flex", flexDirection: "column" }}>
@@ -92,7 +98,7 @@ export default function DownloadSection() {
         </div>
 
         {/* APP STORE */}
-        <div
+        {/* <div
           style={{
             backgroundColor: colors.secondary,
             border: `1px solid ${colors.cardBorder}`,
@@ -126,7 +132,7 @@ export default function DownloadSection() {
               AppStore
             </span>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* FOOTER SECTION */}
