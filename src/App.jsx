@@ -1,22 +1,24 @@
 import './App.css';
-import React from 'react';
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React from 'react';
 
-import Header from './components/Header';
-import HeroSection from './components/HeroSection';
-import WhyChatSpark from './components/WhyChatSpark';
 import SafetyConsentSection from './components/SafetyConsentSection';
-import DownloadSection from './components/DownloadSection';
-import FAQ from './components/FAQ';
-import RefundPolicy from './components/RefundPolicy';
 import CommunityGuidelines from './components/CommunityGuidelines';
-import TermsOfUse from './components/TermsOfUse';
+import ChildSafetyPolicy from './components/ChildSafetyPolicy';
+import DownloadSection from './components/DownloadSection';
 import PrivacyPolicy from './components/PrivacyPolicy';
-import JoinUs from './components/JoinUs';
+import WhyChatSpark from './components/WhyChatSpark';
+import RefundPolicy from './components/RefundPolicy';
+import HeroSection from './components/HeroSection';
 import DeletionPolicy from './components/deletion'; // ✅ IMPORTANT
-
+import TermsOfUse from './components/TermsOfUse';
+import JoinUs from './components/JoinUs';
+import Header from './components/Header';
 import ROUTES from './constants/Routes';
 import colors from './constants/colors';
+import FAQ from './components/FAQ';
+
 
 function App() {
   return (
@@ -56,6 +58,7 @@ function App() {
 
           {/* ✅ ACCOUNT DELETION (PLAY STORE REQUIRED) */}
           <Route path="/deletion" element={<DeletionPolicy />} />
+          <Route path='/child-safety' element={<ChildSafetyPolicy/>}/>
         </Routes>
       </div>
     </BrowserRouter>

@@ -251,6 +251,7 @@ export default function DownloadSection() {
             { label: "Terms", route: "/terms" },
             { label: "Privacy", route: "/privacy-policy" },
             { label: "Community Guidelines", route: "/community-guidelines" },
+            { label: "Child Safety Policy", route: "/child-safety" }
           ]}
         />
       </div>
