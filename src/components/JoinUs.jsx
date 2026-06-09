@@ -293,7 +293,7 @@ export default function JoinUs() {
     gender: "male",
   });
 
-  const [consent, setConsent] = useState(false);
+  const [consent, setConsent] = useState(true);
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
 
@@ -609,9 +609,7 @@ export default function JoinUs() {
                 fontWeight: "500",
               }}
             >
-              I HEREBY AUTHORIZE TO SEND
-              NOTIFICATIONS ON SMS/MESSAGES/
-              PROMOTIONAL/INFORMATIONAL MESSAGES.
+              I Hereby Authorize And Consent To Receive Notifications, SMS, RCS Messages, Promotional Communications, And Informational Messages From The Company On My Registered Mobile Number.
             </label>
           </div>
 
