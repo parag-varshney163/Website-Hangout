@@ -7,12 +7,26 @@
 //     name: "",
 //     phone: "",
 //     reason: "creator",
+//     gender: "male",
 //   });
 //   const [loading, setLoading] = useState(false);
 //   const [message, setMessage] = useState("");
 //   // Handle input updates
 //   const handleChange = (e) => {
-//     setFormData({ ...formData, [e.target.name]: e.target.value });
+//     setFormData({
+//       ...formData,
+//       [e.target.name]: e.target.value,
+//     });
+//   };
+//   // Get current IST date
+//   const getISTDate = () => {
+//     const now = new Date();
+//     const istTime = new Date(
+//       now.toLocaleString("en-US", {
+//         timeZone: "Asia/Kolkata",
+//       })
+//     );
+//     return istTime.toISOString();
 //   };
 //   // Handle API Submit
 //   const handleSubmit = async () => {
@@ -23,15 +37,28 @@
 //     setLoading(true);
 //     setMessage("");
 //     try {
-//       const res = await fetch("https://api.chatspark.in/api/v1/website/join-us", {
-//         method: "POST",
-//         headers: { "Content-Type": "application/json" },
-//         body: JSON.stringify(formData),
-//       });
+//       const res = await fetch(
+//         "https://admin.chatspark.in/api/v1/website/join-us",
+//         {
+//           method: "POST",
+//           headers: {
+//             "Content-Type": "application/json",
+//           },
+//           body: JSON.stringify({
+//             ...formData,
+//             createdAt: getISTDate(),
+//           }),
+//         }
+//       );
 //       const data = await res.json();
 //       if (data.success) {
 //         setMessage("Submitted successfully!");
-//         setFormData({ name: "", phone: "", reason: "creator" });
+//         setFormData({
+//           name: "",
+//           phone: "",
+//           reason: "creator",
+//           gender: "male",
+//         });
 //       } else {
 //         setMessage(data.message || "Something went wrong.");
 //       }
@@ -41,14 +68,15 @@
 //     setLoading(false);
 //   };
 //   return (
-//     <div className="md:-mt-[60px]"
+//     <div
+//       className="md:-mt-[60px]"
 //       style={{
 //         minHeight: "100vh",
 //         width: "100%",
 //         padding: "16px 20px",
 //         display: "flex",
 //         justifyContent: "center",
-//         overflowX:"hidden"
+//         overflowX: "hidden",
 //       }}
 //     >
 //       <div
@@ -66,11 +94,14 @@
 //           <img
 //             src={HeroSectionI}
 //             alt="Join Us"
-//             style={{ width: "100%", borderRadius: "12px" }}
+//             style={{
+//               width: "100%",
+//               borderRadius: "12px",
+//             }}
 //           />
 //         </div>
 //         {/* RIGHT FORM */}
-//         <div className="min-w-100%" style={{ flex: 1,  }}>
+//         <div className="min-w-100%" style={{ flex: 1 }}>
 //           <h1
 //             style={{
 //               fontSize: "44px",
@@ -79,7 +110,10 @@
 //               marginBottom: "10px",
 //             }}
 //           >
-//             Want To <span style={{ color: colors.accent }}>Join Us?</span>
+//             Want To{" "}
+//             <span style={{ color: colors.accent }}>
+//               Join Us?
+//             </span>
 //           </h1>
 //           <p
 //             style={{
@@ -90,12 +124,19 @@
 //               maxWidth: "480px",
 //             }}
 //           >
-//             Help us create games that spark fun, destiny, and real connections.
-//             Join our team and be part of building playful worlds where
-//             entertainment meets friendship.
+//             Help us create games that spark fun, destiny,
+//             and real connections. Join our team and be part
+//             of building playful worlds where entertainment
+//             meets friendship.
 //           </p>
 //           {/* NAME */}
-//           <label style={{ color: colors.textPrimary, fontSize: "16px", fontWeight: "600" }}>
+//           <label
+//             style={{
+//               color: colors.textPrimary,
+//               fontSize: "16px",
+//               fontWeight: "600",
+//             }}
+//           >
 //             Name
 //           </label>
 //           <input
@@ -117,7 +158,13 @@
 //             }}
 //           />
 //           {/* PHONE */}
-//           <label style={{ color: colors.textPrimary, fontSize: "16px", fontWeight: "600" }}>
+//           <label
+//             style={{
+//               color: colors.textPrimary,
+//               fontSize: "16px",
+//               fontWeight: "600",
+//             }}
+//           >
 //             Phone Number
 //           </label>
 //           <input
@@ -138,8 +185,44 @@
 //               fontSize: "15px",
 //             }}
 //           />
+//           {/* GENDER */}
+//           <label
+//             style={{
+//               color: colors.textPrimary,
+//               fontSize: "16px",
+//               fontWeight: "600",
+//             }}
+//           >
+//             Gender
+//           </label>
+//           <select
+//             name="gender"
+//             value={formData.gender}
+//             onChange={handleChange}
+//             style={{
+//               width: "100%",
+//               padding: "14px 18px",
+//               marginTop: "8px",
+//               marginBottom: "20px",
+//               borderRadius: "12px",
+//               backgroundColor: colors.inputBg,
+//               border: `1px solid ${colors.cardBorder}`,
+//               color: colors.textSecondary,
+//               fontSize: "15px",
+//             }}
+//           >
+//             <option value="male">Male</option>
+//             <option value="female">Female</option>
+//             <option value="other">Other</option>
+//           </select>
 //           {/* REASON */}
-//           <label style={{ color: colors.textPrimary, fontSize: "16px", fontWeight: "600" }}>
+//           <label
+//             style={{
+//               color: colors.textPrimary,
+//               fontSize: "16px",
+//               fontWeight: "600",
+//             }}
+//           >
 //             Reason To Contact Us
 //           </label>
 //           <select
@@ -158,21 +241,35 @@
 //               fontSize: "15px",
 //             }}
 //           >
-//             <option value="creator">Want to join as creator</option>
-//             <option value="job">Looking for job</option>
+//             <option value="creator">
+//               Want to join as creator
+//             </option>
+//             <option value="job">
+//               Looking for job
+//             </option>
 //           </select>
 //           {/* SUBMIT BUTTON */}
 //           <Button
 //             size="lg"
 //             variant="primary"
-//             style={{ borderRadius: "12px", paddingLeft: "40px", paddingRight: "40px" }}
+//             style={{
+//               borderRadius: "12px",
+//               paddingLeft: "40px",
+//               paddingRight: "40px",
+//             }}
 //             onClick={handleSubmit}
 //           >
 //             {loading ? "Submitting..." : "Submit"}
 //           </Button>
 //           {/* MESSAGE */}
 //           {message && (
-//             <p style={{ marginTop: "16px", color: colors.accent, fontSize: "16px" }}>
+//             <p
+//               style={{
+//                 marginTop: "16px",
+//                 color: colors.accent,
+//                 fontSize: "16px",
+//               }}
+//             >
 //               {message}
 //             </p>
 //           )}
@@ -196,6 +293,7 @@ export default function JoinUs() {
     gender: "male",
   });
 
+  const [consent, setConsent] = useState(false);
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
 
@@ -220,10 +318,20 @@ export default function JoinUs() {
     return istTime.toISOString();
   };
 
+  // Validation
+  const isFormValid =
+    formData.name.trim() &&
+    formData.phone.trim() &&
+    formData.gender &&
+    formData.reason &&
+    consent;
+
   // Handle API Submit
   const handleSubmit = async () => {
-    if (!formData.name || !formData.phone) {
-      setMessage("Please fill all fields.");
+    if (!isFormValid) {
+      setMessage(
+        "Please fill all fields and accept the authorization."
+      );
       return;
     }
 
@@ -256,6 +364,8 @@ export default function JoinUs() {
           reason: "creator",
           gender: "male",
         });
+
+        setConsent(false);
       } else {
         setMessage(data.message || "Something went wrong.");
       }
@@ -339,7 +449,7 @@ export default function JoinUs() {
               fontWeight: "600",
             }}
           >
-            Name
+            Name *
           </label>
 
           <input
@@ -369,15 +479,21 @@ export default function JoinUs() {
               fontWeight: "600",
             }}
           >
-            Phone Number
+            Phone Number *
           </label>
 
           <input
-            type="text"
+            type="tel"
             name="phone"
-            placeholder="+91 | Your Phone Number"
+            maxLength={10}
+            placeholder="Your Phone Number"
             value={formData.phone}
-            onChange={handleChange}
+            onChange={(e) =>
+              setFormData({
+                ...formData,
+                phone: e.target.value.replace(/\D/g, ""),
+              })
+            }
             style={{
               width: "100%",
               padding: "14px 18px",
@@ -399,7 +515,7 @@ export default function JoinUs() {
               fontWeight: "600",
             }}
           >
-            Gender
+            Gender *
           </label>
 
           <select
@@ -431,7 +547,7 @@ export default function JoinUs() {
               fontWeight: "600",
             }}
           >
-            Reason To Contact Us
+            Reason To Contact Us *
           </label>
 
           <select
@@ -442,7 +558,7 @@ export default function JoinUs() {
               width: "100%",
               padding: "14px 18px",
               marginTop: "8px",
-              marginBottom: "30px",
+              marginBottom: "24px",
               borderRadius: "12px",
               backgroundColor: colors.inputBg,
               border: `1px solid ${colors.cardBorder}`,
@@ -459,14 +575,61 @@ export default function JoinUs() {
             </option>
           </select>
 
+          {/* CONSENT CHECKBOX */}
+          <div
+            style={{
+              display: "flex",
+              alignItems: "flex-start",
+              gap: "12px",
+              marginBottom: "30px",
+            }}
+          >
+            <input
+              type="checkbox"
+              id="consent"
+              checked={consent}
+              onChange={(e) =>
+                setConsent(e.target.checked)
+              }
+              style={{
+                width: "20px",
+                height: "20px",
+                cursor: "pointer",
+                marginTop: "2px",
+              }}
+            />
+
+            <label
+              htmlFor="consent"
+              style={{
+                color: colors.textPrimary,
+                fontSize: "14px",
+                lineHeight: "1.6",
+                cursor: "pointer",
+                fontWeight: "500",
+              }}
+            >
+              I HEREBY AUTHORIZE TO SEND
+              NOTIFICATIONS ON SMS/MESSAGES/
+              PROMOTIONAL/INFORMATIONAL MESSAGES.
+            </label>
+          </div>
+
           {/* SUBMIT BUTTON */}
           <Button
             size="lg"
             variant="primary"
+            disabled={!isFormValid || loading}
             style={{
               borderRadius: "12px",
               paddingLeft: "40px",
               paddingRight: "40px",
+              opacity:
+                !isFormValid || loading ? 0.6 : 1,
+              cursor:
+                !isFormValid || loading
+                  ? "not-allowed"
+                  : "pointer",
             }}
             onClick={handleSubmit}
           >
