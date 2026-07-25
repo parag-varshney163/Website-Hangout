@@ -122,7 +122,7 @@ export default function Header() {
       {/* MOBILE DROPDOWN MENU */}
       {open && (
         <div
-          className="absolute top-20 left-0 w-full flex flex-col gap-6 px-6 py-6 md:hidden"
+          className="absolute top-20 left-0 z-[9999] w-full flex flex-col gap-6 px-6 py-6 md:hidden"
           style={{
             background: colors.primary,
             borderTop: `1px solid ${colors.cardBorder}`,

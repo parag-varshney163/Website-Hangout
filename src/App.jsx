@@ -7,6 +7,7 @@ import SafetyConsentSection from './components/SafetyConsentSection';
 import CommunityGuidelines from './components/CommunityGuidelines';
 import ChildSafetyPolicy from './components/ChildSafetyPolicy';
 import DownloadSection from './components/DownloadSection';
+import WhyChooseCards from './components/WhyChooseCards';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import WhyChatSpark from './components/WhyChatSpark';
 import RefundPolicy from './components/RefundPolicy';
@@ -42,6 +43,7 @@ function App() {
               <>
                 <HeroSection />
                 <WhyChatSpark />
+                <WhyChooseCards/>
                 <SafetyConsentSection />
                 <DownloadSection />
               </>
