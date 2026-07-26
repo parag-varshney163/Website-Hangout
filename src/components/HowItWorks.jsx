@@ -1,7 +1,7 @@
 import { Download, UserRound, PhoneCall, HeartHandshake } from "lucide-react";
 import React from "react";
 
-import TimelineCard from "./TimelineCard";
+import TimelineCard from "./TimeLineCard";
 import colors from "../constants/colors";
 
 
