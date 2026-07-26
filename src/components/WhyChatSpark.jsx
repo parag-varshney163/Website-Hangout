@@ -165,10 +165,10 @@ export default function WhyChatSpark() {
         </span>
 
         <h1
-          className="font-extrabold leading-tight mt-8"
+          className="font-extrabold leading-tight mt-8 text-4xl lg:text-6xl"
           style={{
             color: colors.textPrimary,
-            fontSize: "clamp(3rem,7vw,5.5rem)",
+            //fontSize: "clamp(3rem,7vw,5.5rem)",
           }}
         >
           Everything You

@@ -41,7 +41,7 @@ export default function FAQSection() {
   return (
     <section
       id="faq"
-      className="py-8"
+      className="py-16"
       style={{
         background: colors.gradientVertical,
       }}
@@ -66,10 +66,10 @@ export default function FAQSection() {
             </span>
 
             <h2
-              className="font-black leading-none mt-8"
+              className="font-black leading-none mt-8 text-4xl text-6xl"
               style={{
                 color: colors.textPrimary,
-                fontSize: "clamp(3rem,7vw,5.5rem)",
+                //fontSize: "clamp(3rem,7vw,5.5rem)",
               }}
             >
               Frequently

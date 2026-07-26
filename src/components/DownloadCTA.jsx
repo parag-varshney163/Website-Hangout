@@ -41,10 +41,10 @@ export default function DownloadCTA() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: .6 }}
-                    className="font-black mt-8 leading-tight"
+                    className="font-black mt-8 leading-tight text-4xl lg:text-6xl"
                     style={{
                         color: colors.textPrimary,
-                        fontSize: "clamp(3rem,7vw,5.5rem)",
+                        //fontSize: "clamp(3rem,7vw,5.5rem)",
                     }}
                 >
                     Ready To Start
@@ -92,7 +92,7 @@ export default function DownloadCTA() {
             className="w-20 h-20 rounded-3xl shadow-2xl"
           />
         </motion.a> */}
-                <motion.a
+                {/* <motion.a
                     href="#"
                     initial={{ opacity: 0, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
@@ -135,7 +135,7 @@ export default function DownloadCTA() {
                             </h3>
                         </div>
                     </div>
-                </motion.a>
+                </motion.a> */}
 
                 {/* QR */}
 

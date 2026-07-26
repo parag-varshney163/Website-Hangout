@@ -122,10 +122,10 @@ export default function WhyChooseCards() {
 
         {/* Title */}
         <h2
-          className="mt-8 font-bold leading-tight"
+          className="mt-8 font-bold leading-tight text-4xl lg:text-6xl"
           style={{
             color: colors.textPrimary,
-            fontSize: "clamp(42px,7vw,78px)",
+            //fontSize: "clamp(42px,7vw,78px)",
           }}
         >
           Built For Meaningful

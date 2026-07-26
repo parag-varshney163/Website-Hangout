@@ -56,7 +56,7 @@ export default function WhyCard({
 
       {/* Title */}
       <h3
-        className="relative z-10 mt-8 text-4xl font-bold"
+        className="relative z-10 mt-8 text-3xl font-bold"
         style={{
           color: "#171717",
         }}
@@ -66,7 +66,7 @@ export default function WhyCard({
 
       {/* Description */}
       <p
-        className="relative z-10 mt-5 leading-9 text-xl"
+        className="relative z-10 mt-5 leading-9 text-md"
         style={{
           color: "#5D5D5D",
         }}

@@ -1,5 +1,6 @@
 import { Shield, Handshake, Ban, Eye, BadgePlus, Heart, TriangleAlert } from "lucide-react";
 import { motion } from "framer-motion";
+import { useState } from "react";
 // import React from "react";
 // import colors from "../constants/colors";
 // export default function SafetyConsentSection() {
@@ -136,6 +137,7 @@ const safetyData = [
 ];
 
 export default function SafetyConsentSection() {
+  const [expandedCard, setExpandedCard] = useState(null);
   return (
     <section
       id="safety"
@@ -147,43 +149,6 @@ export default function SafetyConsentSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
 
           {/* LEFT */}
-
-          {/* <div className="lg:sticky top-28 h-fit">
-
-            <span
-              className="inline-flex rounded-full px-6 py-3 font-semibold"
-              style={{
-                color: colors.accent,
-                border: `1px solid ${colors.accent}40`,
-                background: colors.hover,
-              }}
-            >
-              TRUST & SAFETY
-            </span>
-
-            <h2
-              className="text-6xl font-black mt-8 leading-none"
-              style={{ color: colors.textPrimary }}
-            >
-              Built For{" "}
-              <span style={{ color: colors.accent }}>
-                Safe
-              </span>
-              <br />
-              Conversations.
-            </h2>
-
-            <p
-              className="mt-8 text-xl leading-9"
-              style={{
-                color: colors.textSecondary,
-              }}
-            >
-              Connect With Confidence Through Verified Creators,
-              Consent And Trusted Safety Features.
-            </p>
-
-          </div> */}
           <div className="lg:sticky lg:top-28 h-fit text-center lg:text-left">
 
             <span
@@ -198,10 +163,10 @@ export default function SafetyConsentSection() {
             </span>
 
             <h2
-              className="font-black mt-6 sm:mt-8 leading-tight"
+              className="font-black mt-6 sm:mt-8 leading-tight text-4xl lg:text-6xl"
               style={{
                 color: colors.textPrimary,
-                fontSize: "clamp(2.5rem,8vw,4.5rem)",
+                //fontSize: "clamp(2.5rem,8vw,4.5rem)",
               }}
             >
               Built For{" "}
@@ -233,6 +198,12 @@ export default function SafetyConsentSection() {
                 key={item.id}
                 item={item}
                 index={index}
+                isExpanded={expandedCard === item.id}
+                onToggle={() =>
+                  setExpandedCard(
+                    expandedCard === item.id ? null : item.id
+                  )
+                }
               />
             ))}
 

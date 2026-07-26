@@ -97,10 +97,10 @@ export default function FeatureCard({ feature }) {
 
         {/* Title */}
         <h2
-          className="mt-10 font-extrabold leading-tight"
+          className="mt-10 font-extrabold leading-tight text-4xl lg:text-6xl"
           style={{
             color: colors.primary,
-            fontSize: "clamp(2.6rem,4vw,4rem)",
+            //fontSize: "clamp(2.6rem,4vw,4rem)",
           }}
         >
           {feature.title}

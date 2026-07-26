@@ -67,10 +67,10 @@ export default function HowItWorks() {
           </span>
 
           <h2
-            className="font-black mt-8 leading-tight"
+            className="font-black mt-8 leading-tight text-4xl lg:text-6xl"
             style={{
               color: colors.textPrimary,
-              fontSize: "clamp(3rem,7vw,5.5rem)",
+              //fontSize: "clamp(3rem,7vw,5.5rem)",
             }}
           >
             Start Your Journey In
