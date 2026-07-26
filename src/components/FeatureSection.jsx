@@ -27,7 +27,7 @@ export default function FeatureSection({
 
         <section
             ref={ref}
-            className="h-screen relative"
+            className="h-[96vh] relative"
         >
 
             <motion.div

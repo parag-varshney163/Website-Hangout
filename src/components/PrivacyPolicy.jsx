@@ -178,7 +178,7 @@ export default function PrivacyPolicy() {
         </div>
 
         {/* 2. How We Use Your Information */}
-        <div style={section}>
+        {/* <div style={section}>
           <h2 style={heading}>2. How We Use Your Information</h2>
 
           <ul style={list}>
@@ -213,7 +213,57 @@ export default function PrivacyPolicy() {
               appeals, or support requests promptly.
             </li>
           </ul>
-        </div>
+        </div> */}
+        <div style={section}>
+        <h2 style={heading}>How We Use Your Information</h2>
+
+        <ul
+          style={{
+            ...text,
+            paddingLeft: "34px",
+            marginTop: "12px",
+          }}
+        >
+          <li style={{ marginBottom: "14px" }}>
+            <strong>Provide Services:</strong> Enable 1:1 audio calls, private chat,
+            astrology features, and other in-app services.
+          </li>
+
+          <li style={{ marginBottom: "14px" }}>
+            <strong>Personalize Your Experience:</strong> Recommend creators, users,
+            astrology content, and features based on your interests and activity.
+          </li>
+
+          <li style={{ marginBottom: "14px" }}>
+            <strong>Process Transactions:</strong> Facilitate payments, wallet
+            operations, and purchases of CS Coins and other eligible in-app services.
+          </li>
+
+          <li style={{ marginBottom: "14px" }}>
+            <strong>Ensure Safety and Compliance:</strong> Monitor and moderate user
+            interactions, detect fraud, prevent abuse, and comply with applicable
+            laws and regulatory requirements.
+          </li>
+
+          <li style={{ marginBottom: "14px" }}>
+            <strong>Improve the Platform:</strong> Analyze usage trends and feedback
+            to enhance app performance, security, reliability, and develop new
+            features.
+          </li>
+
+          <li style={{ marginBottom: "14px" }}>
+            <strong>Marketing and Promotions:</strong> Display relevant offers,
+            promotions, notifications, and advertisements, and send marketing
+            communications where permitted by law or with your consent where
+            required.
+          </li>
+
+          <li>
+            <strong>Customer Support and Grievance Handling:</strong> Respond to user
+            inquiries, complaints, appeals, and provide timely customer support.
+          </li>
+        </ul>
+      </div>
 
         {/* 3. How We Share Your Information */}
         <div style={section}>
@@ -338,10 +388,16 @@ export default function PrivacyPolicy() {
            ChatSpark is intended exclusively for users aged 18 years and above. We do not knowingly collect, use, or share personal information from individuals under 18. If we become aware that a user is under 18, we will immediately delete their account and associated data. If you believe a minor has provided us with personal information, please contact us at grievance@chatspark.in.
           </p>
         </div>
+         <div style={section}>
+        <h2 style={heading}>10. Ban Policy</h2>
+        <p style={text}>
+          ChatSpark maintains a zero-tolerance policy toward any activity that endangers the safety of users, particularly minors. Any user found impersonating a minor, attempting to contact or exploit minors, engaging in grooming behavior, sharing child sexual abuse material (CSAM), or otherwise violating applicable child safety laws will have their account permanently suspended or terminated. Where required by applicable law, ChatSpark may preserve relevant information and report such activity to the appropriate law enforcement or regulatory authorities.
+        </p>
+      </div>
 
         {/* 9. Grievance */}
         <div style={section}>
-          <h2 style={heading}>10. Grievance Redressal Mechanism</h2>
+          <h2 style={heading}>11. Grievance Redressal Mechanism</h2>
           <p style={text}>
             If you have any concerns about data safety, privacy, or Platform
             usage, please contact:
@@ -377,7 +433,7 @@ export default function PrivacyPolicy() {
 
         {/* 10. Changes */}
         <div style={section}>
-          <h2 style={heading}>11. Changes to This Policy</h2>
+          <h2 style={heading}>12. Changes to This Policy</h2>
           <p style={text}>
             We may update this Policy periodically to reflect new features,
             legal requirements, or service changes. Users will be notified of
@@ -387,7 +443,7 @@ export default function PrivacyPolicy() {
 
         {/* 11. Contact */}
         <div style={section}>
-          <h2 style={heading}>12. Contact Us</h2>
+          <h2 style={heading}>13. Contact Us</h2>
           <p style={text}>
             For general questions about this Policy, contact:
             <br />

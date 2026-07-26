@@ -191,7 +191,7 @@ export default function HeroSection() {
         background: colors.primary,
       }}
     >
-      <div className="max-w-[1450px] mx-auto px-6 lg:px-12 py-20">
+      <div className="max-w-[1450px] mx-auto px-6 lg:px-12 ">
 
         <div className="grid lg:grid-cols-2 gap-16 items-center">
 
@@ -220,7 +220,7 @@ export default function HeroSection() {
 
             {/* Heading */}
 
-            <h1 className="font-bold leading-none">
+            <h1 className="font-bold leading-none whitespace-nowrap">
 
               {heading1.map((word, index) => (
                 <motion.span
@@ -237,7 +237,7 @@ export default function HeroSection() {
                     delay: index * .15,
                     duration: .6
                   }}
-                  className="inline-block mr-4 text-white text-5xl lg:text-7xl"
+                  className="inline-block mr-4 text-white text-4xl lg:text-6xl"
                 >
                   {word}
                 </motion.span>
@@ -260,7 +260,7 @@ export default function HeroSection() {
                     delay: .6 + index * .15,
                     duration: .6
                   }}
-                  className={`inline-block mr-4 text-5xl lg:text-7xl ${word === "One" || word === "Tap"
+                  className={`inline-block mr-2 text-4xl lg:text-6xl ${word === "One" || word === "Tap"
                     ? "text-yellow-400"
                     : "text-white"
                     }`}

@@ -143,10 +143,16 @@ export default function ChildSafetyPolicy() {
                         harm.
                     </p>
                 </div>
+                <div style={sectionStyle}>
+                    <h2 style={headingStyle}>7. Ban Policy</h2>
+                    <p style={textStyle}>
+                        ChatSpark maintains a zero-tolerance policy toward any activity that endangers the safety of users, particularly minors. Any user found impersonating a minor, attempting to contact or exploit minors, engaging in grooming behavior, sharing child sexual abuse material (CSAM), or otherwise violating applicable child safety laws will have their account permanently suspended or terminated. Where required by applicable law, ChatSpark may preserve relevant information and report such activity to the appropriate law enforcement or regulatory authorities.
+                    </p>
+                </div>
 
                 {/* SECTION 7 */}
                 <div style={sectionStyle}>
-                    <h2 style={headingStyle}>7. Child Safety Point of Contact</h2>
+                    <h2 style={headingStyle}>8. Child Safety Point of Contact</h2>
 
                     <p style={textStyle}>
                         For all child safety related concerns, please contact:

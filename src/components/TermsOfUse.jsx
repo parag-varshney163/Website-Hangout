@@ -60,15 +60,15 @@ export default function TermsOfUse() {
       </div>
 
       {/* SECTION 3 */}
-      <div style={section}>
+      {/* <div style={section}>
         <h2 style={heading}>Our Services</h2>
 
-        {/* Intro Paragraph */}
+      
         <p style={text}>
           <strong>ChatSpark</strong> is a mobile application offering:
         </p>
 
-        {/* Numbered List */}
+        
         <ol style={{ ...text, paddingLeft: "24px" }}>
           <li>
             <strong style={{ color: colors.accent }}>1:1 Audio Calling:</strong> Real-time audio conversations between
@@ -89,7 +89,7 @@ export default function TermsOfUse() {
           </li>
         </ol>
 
-        {/* Paragraphs */}
+        
         <p style={text}>
           The Platform enables users to engage in voice-based interactions and
           participate in casual games. The Platform does not support public uploads of
@@ -108,6 +108,61 @@ export default function TermsOfUse() {
           We may review or remove any content that violates these Terms or applicable
           laws. You remain responsible for any information you provide.
         </p>
+      </div> */}
+      <div style={section}>
+        <h2 style={heading}>Our Services</h2>
+
+        {/* Intro */}
+        <p style={text}>
+          <strong>ChatSpark</strong> is a mobile application offering:
+        </p>
+
+        {/* Bullet List */}
+        <ul
+          style={{
+            ...text,
+            paddingLeft: "34px",
+            marginTop: "10px",
+            marginBottom: "28px",
+          }}
+        >
+          <li style={{ marginBottom: "12px" }}>
+            <strong>1:1 Audio Calling:</strong> Real-time voice conversations between
+            users and creators based on mood, vibe, or shared interests.
+          </li>
+
+          <li style={{ marginBottom: "12px" }}>
+            <strong>Private Chat:</strong> Continue conversations through secure
+            in-app messaging and build meaningful connections.
+          </li>
+
+          <li>
+            <strong>Astrology Services:</strong> Explore daily horoscopes, zodiac
+            insights, and personalized astrology content for entertainment and
+            self-discovery.
+          </li>
+        </ul>
+
+        {/* Paragraphs */}
+        <p style={text}>
+          The Platform enables users to connect through voice calls, chat, and
+          astrology-based experiences. The Platform does <strong>not</strong> support
+          public uploads of photographs, videos, or publicly visible text content.
+        </p>
+
+        <p style={text}>
+          Creators (hosts) may provide voice-based introductions, audio interactions,
+          astrology consultations, or other Platform-managed content. You grant us a
+          worldwide, royalty-free, sublicensable, and transferable license to use and
+          process the inputs you provide solely for operating, improving, securing,
+          and promoting the Services.
+        </p>
+
+        <p style={text}>
+          We may review, moderate, or remove any content that violates these Terms or
+          applicable laws. You remain responsible for any information or content you
+          provide while using the Platform.
+        </p>
       </div>
 
 
@@ -123,8 +178,9 @@ export default function TermsOfUse() {
       <div style={section}>
         <h2 style={heading}>How to Use Our Services</h2>
         <p style={text}>
-          To use ChatSpark, download the App and register using your mobile number. You may verify your account through a One-Time Password (OTP) sent via SMS.<br />
-          You can then access audio calls and gaming features subject to these Terms.
+          To use ChatSpark, download the App and register using your mobile number. You may be required to verify your account through a One-Time Password (OTP) sent via SMS.
+          Once registered, you can access 1:1 audio calling, private chat, and astrology services, subject to these Terms. Some features may require wallet recharge, subscription, or in-app purchases to unlock or continue using them. By using our Services, you agree to comply with these Terms and all applicable laws and regulations.
+
         </p>
       </div>
 
@@ -257,11 +313,11 @@ export default function TermsOfUse() {
 
       {/* Dispute Resolution */}
       <div style={section}>
-        <h2 style={heading}>Dispute Resolution</h2>
+        <h2 style={heading}>Governing Law and Jurisdiction</h2>
 
         <p style={text}>
-          All disputes are governed by Indian law and subject to exclusive jurisdiction of courts in{" "}
-          <span style={{ fontWeight: "700", color: colors.accent }}>Delhi, India</span>.
+          These Terms shall be governed by and construed in accordance with the laws of India. Any disputes arising out of or in connection with these Terms or your use of the Services shall be subject to the exclusive jurisdiction of the <span style={{ color: colors.accent }}>High Court of Judicature at Allahabad </span>and the competent courts at<span style={{ color: colors.accent }}> Noida (Gautam Buddha Nagar), Uttar Pradesh, India </span>, as applicable under law.
+
         </p>
       </div>
 

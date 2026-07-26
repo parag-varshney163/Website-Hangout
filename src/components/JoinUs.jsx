@@ -280,7 +280,7 @@
 // }
 import React, { useState } from "react";
 
-import HeroSectionI from "../assets/HeroSectionI.webp";
+import HeroSectionI from "../assets/call.webp";
 import colors from "../constants/colors";
 import Button from "./ui/Buttton";
 

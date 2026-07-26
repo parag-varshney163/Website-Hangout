@@ -101,7 +101,7 @@ const cards = [
 export default function WhyChooseCards() {
   return (
     <section
-      className="relative py-28 px-6 overflow-hidden"
+      className="relative py-8 px-6 overflow-hidden"
       style={{
         background: colors.gradientVertical,
       }}

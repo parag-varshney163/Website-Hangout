@@ -142,7 +142,7 @@ export default function WhyChatSpark() {
   return (
   <section
     id="feature"
-    className="relative py-28 overflow-hidden"
+    className="relative py-4 overflow-hidden"
     style={{
       background: colors.gradientVertical,
     }}
@@ -150,7 +150,7 @@ export default function WhyChatSpark() {
     <div className="max-w-7xl mx-auto px-6">
 
       {/* Header */}
-      <div className="text-center mb-28">
+      <div className="text-center mb-8">
 
         <span
           className="inline-flex items-center px-8 py-3 rounded-full font-semibold tracking-wide"

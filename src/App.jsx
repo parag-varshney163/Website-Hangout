@@ -12,8 +12,11 @@ import PrivacyPolicy from './components/PrivacyPolicy';
 import WhyChatSpark from './components/WhyChatSpark';
 import RefundPolicy from './components/RefundPolicy';
 import HeroSection from './components/HeroSection';
+import DownloadCTA from './components/DownloadCTA';
 import DeletionPolicy from './components/deletion'; // ✅ IMPORTANT
 import TermsOfUse from './components/TermsOfUse';
+import HowItWorks from './components/HowItWorks';
+import FAQSection from './components/FAQSection';
 import JoinUs from './components/JoinUs';
 import Header from './components/Header';
 import ROUTES from './constants/Routes';
@@ -45,6 +48,9 @@ function App() {
                 <WhyChatSpark />
                 <WhyChooseCards/>
                 <SafetyConsentSection />
+                <HowItWorks/>
+                <FAQSection/>
+                <DownloadCTA/>
                 <DownloadSection />
               </>
             }
