@@ -86,7 +86,7 @@ export default function PrivacyPolicy() {
             (“Company,” “we,” “us,” or “our”), a private company established under
             the laws of India with its registered office at B-128, First Floor,
             Sector-2, Gautam Buddha Nagar, Uttar Pradesh 201301, collects, uses,
-            processes, shares, and stores your information through the ChatSpark
+            processes, shares, and stores your information through the Hangout
             mobile application and its versions (“App”), collectively referred
             to as the “Platform.”
           </p>
@@ -345,7 +345,7 @@ export default function PrivacyPolicy() {
               <strong>Consent Withdrawal:</strong> You may withdraw consent for data usage (e.g., marketing or analytics) through in-app settings. Where processing is based on consent, you have the right to withdraw it at any time.
             </li>
             <li>
-              <strong>Grievance Redressal:</strong> You may report content or raise data-related concerns through the in-app chat or support@chatspark.in.
+              <strong>Grievance Redressal:</strong> You may report content or raise data-related concerns through the in-app chat or support@hangoutclub.in.
               <a style={accentLink} href="https://support.hangoutclub.in">
                 
               </a>
@@ -385,13 +385,13 @@ export default function PrivacyPolicy() {
         <div style={section}>
           <h2 style={heading}>9. Children's Privacy</h2>
           <p style={text}>
-           Hangout is intended exclusively for users aged 18 years and above. We do not knowingly collect, use, or share personal information from individuals under 18. If we become aware that a user is under 18, we will immediately delete their account and associated data. If you believe a minor has provided us with personal information, please contact us at grievance@chatspark.in.
+           Hangout is intended exclusively for users aged 18 years and above. We do not knowingly collect, use, or share personal information from individuals under 18. If we become aware that a user is under 18, we will immediately delete their account and associated data. If you believe a minor has provided us with personal information, please contact us at grievance@hangoutclub.in.
           </p>
         </div>
          <div style={section}>
         <h2 style={heading}>10. Ban Policy</h2>
         <p style={text}>
-          Hangout maintains a zero-tolerance policy toward any activity that endangers the safety of users, particularly minors. Any user found impersonating a minor, attempting to contact or exploit minors, engaging in grooming behavior, sharing child sexual abuse material (CSAM), or otherwise violating applicable child safety laws will have their account permanently suspended or terminated. Where required by applicable law, ChatSpark may preserve relevant information and report such activity to the appropriate law enforcement or regulatory authorities.
+          Hangout maintains a zero-tolerance policy toward any activity that endangers the safety of users, particularly minors. Any user found impersonating a minor, attempting to contact or exploit minors, engaging in grooming behavior, sharing child sexual abuse material (CSAM), or otherwise violating applicable child safety laws will have their account permanently suspended or terminated. Where required by applicable law, Hangout may preserve relevant information and report such activity to the appropriate law enforcement or regulatory authorities.
         </p>
       </div>
 

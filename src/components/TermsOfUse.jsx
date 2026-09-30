@@ -136,11 +136,11 @@ export default function TermsOfUse() {
             in-app messaging and build meaningful connections.
           </li>
 
-          <li>
+          {/* <li>
             <strong>Astrology Services:</strong> Explore daily horoscopes, zodiac
             insights, and personalized astrology content for entertainment and
             self-discovery.
-          </li>
+          </li> */}
         </ul>
 
         {/* Paragraphs */}

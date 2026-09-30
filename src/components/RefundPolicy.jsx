@@ -64,7 +64,7 @@ export default function RefundPolicy() {
 
         {/* Intro */}
         <p style={{ ...textStyle, marginBottom: "35px", textAlign: "center" }}>
-          This Refund Policy governs the refund process for services provided by <strong style={{color:colors.accent}}>Hangout</strong>, a mobile application operated by <strong style={{color:colors.accent}}>HangoutX Media Private Limited</strong> (“Company,” “we,” “us,” or “our”), with its registered office at <strong style={{color:colors.accent}}>B-128, First Floor, Sector-2, Gautam Buddha Nagar, Uttar Pradesh 201301</strong>. This policy applies to purchases and transactions made using CS Coin, the virtual currency of the ChatSpark platform (“Platform”), for 1:1 audio calls and interactive pass-based features.
+          This Refund Policy governs the refund process for services provided by <strong style={{color:colors.accent}}>Hangout</strong>, a mobile application operated by <strong style={{color:colors.accent}}>HangoutX Media Private Limited</strong> (“Company,” “we,” “us,” or “our”), with its registered office at <strong style={{color:colors.accent}}>B-128, First Floor, Sector-2, Gautam Buddha Nagar, Uttar Pradesh 201301</strong>. This policy applies to purchases and transactions made using CS Coin, the virtual currency of the Hangout platform (“Platform”), for 1:1 audio calls and interactive pass-based features.
         </p>
 
         {/* General Refund Conditions */}
@@ -134,7 +134,7 @@ export default function RefundPolicy() {
 
           <h4 style={subHeadingStyle}>Refund Medium</h4>
           <p style={textStyle}>
-            All refunds will be credited exclusively to the user’s CS Coin wallet, which can be used for future purchases within the ChatSpark app.
+            All refunds will be credited exclusively to the user’s CS Coin wallet, which can be used for future purchases within the Hangout app.
           </p>
 
           <h4 style={subHeadingStyle}>Eligible Refund Scenarios</h4>

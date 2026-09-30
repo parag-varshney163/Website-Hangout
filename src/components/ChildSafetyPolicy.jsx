@@ -73,7 +73,7 @@ export default function ChildSafetyPolicy() {
                 <div style={sectionStyle}>
                     <h2 style={headingStyle}>1. Our Commitment Against CSAE</h2>
                     <p style={textStyle}>
-                        Hangoutclub, operated by HangoutX Media Private Limited, has a zero-tolerance policy
+                        Hangout, operated by HangoutX Media Private Limited, has a zero-tolerance policy
                         toward Child Sexual Abuse and Exploitation (CSAE) in any form. Any content, behavior,
                         communication, or activity on the Hangoutclub platform that sexually exploits, abuses, or
                         endangers minors is strictly prohibited and will result in immediate account termination,
@@ -146,7 +146,7 @@ export default function ChildSafetyPolicy() {
                 <div style={sectionStyle}>
                     <h2 style={headingStyle}>7. Ban Policy</h2>
                     <p style={textStyle}>
-                        Hangout maintains a zero-tolerance policy toward any activity that endangers the safety of users, particularly minors. Any user found impersonating a minor, attempting to contact or exploit minors, engaging in grooming behavior, sharing child sexual abuse material (CSAM), or otherwise violating applicable child safety laws will have their account permanently suspended or terminated. Where required by applicable law, ChatSpark may preserve relevant information and report such activity to the appropriate law enforcement or regulatory authorities.
+                        Hangout maintains a zero-tolerance policy toward any activity that endangers the safety of users, particularly minors. Any user found impersonating a minor, attempting to contact or exploit minors, engaging in grooming behavior, sharing child sexual abuse material (CSAM), or otherwise violating applicable child safety laws will have their account permanently suspended or terminated. Where required by applicable law, Hangout may preserve relevant information and report such activity to the appropriate law enforcement or regulatory authorities.
                     </p>
                 </div>
 
