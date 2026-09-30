@@ -16,6 +16,7 @@ import DownloadCTA from './components/DownloadCTA';
 import DeletionPolicy from './components/deletion'; // ✅ IMPORTANT
 import TermsOfUse from './components/TermsOfUse';
 import HowItWorks from './components/HowItWorks';
+import GetStarted from './components/Getstarted';
 import FAQSection from './components/FAQSection';
 import JoinUs from './components/JoinUs';
 import Header from './components/Header';
@@ -45,11 +46,12 @@ function App() {
             element={
               <>
                 <HeroSection />
-                <WhyChatSpark />
+                {/* <WhyChatSpark /> */}
                 <WhyChooseCards/>
-                <SafetyConsentSection />
+                <GetStarted/>
+                {/* <SafetyConsentSection />
                 <HowItWorks/>
-                <FAQSection/>
+                <FAQSection/> */}
                 <DownloadCTA/>
                 <DownloadSection />
               </>

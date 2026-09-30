@@ -3,8 +3,8 @@ import { Menu, X, Download, ArrowUpRight } from "lucide-react";
 import { Link as ScrollLink, scroller } from "react-scroll";
 import React, { useState } from "react";
 
+import logo from "../assets/logohang.webp";
 import colors from "../constants/colors";
-import logo from "../assets/logo.webp";
 import Button from "./ui/Buttton";
 
 
@@ -40,7 +40,40 @@ export default function Header() {
       style={{ background: "transparent", overflowX: "hidden" }}
     >
       {/* LOGO */}
-      <img src={logo} alt="logo" className=" h-16 w-16 md:h-26 md:w-26" />
+      {/* <img src={logo} alt="logo" className=" h-16 w-16 md:h-26 md:w-26" /> */}
+      {/* LOGO + HANGOUT */}
+<div
+  className="flex items-center"
+  style={{
+    gap: "14px",
+    flexShrink: 0,
+  }}
+>
+  <img
+    src={logo}
+    alt="Hangout logo"
+    style={{
+      width: "78px",
+      height: "78px",
+      objectFit: "contain",
+    }}
+  />
+
+  <span
+    style={{
+      fontSize: "40px",
+      fontWeight: "700",
+      lineHeight: "1",
+      background: colors.heroGradient,
+      WebkitBackgroundClip: "text",
+      WebkitTextFillColor: "transparent",
+      backgroundClip: "text",
+      whiteSpace: "nowrap",
+    }}
+  >
+    Hangout
+  </span>
+</div>
 
       {/* DESKTOP MENU */}
       <nav className="hidden md:flex items-center gap-10">
