@@ -45,7 +45,7 @@ export default function TermsOfUse() {
       <div style={section}>
 
         <p style={text}>
-          <p>These Terms of Use (“Terms”) govern your access to and use of the ChatSpark mobile application and its versions (the “App”), collectively referred to as the “Platform,” provided by HangoutX Media Private Limited (“Company,” “we,” “us,” or “our”), a private company established under the laws of India with its registered office at B-128, First Floor, Sector-2, Gautam Buddha Nagar, Uttar Pradesh 201301.</p>
+          <p>These Terms of Use (“Terms”) govern your access to and use of the Hangout mobile application and its versions (the “App”), collectively referred to as the “Platform,” provided by HangoutX Media Private Limited (“Company,” “we,” “us,” or “our”), a private company established under the laws of India with its registered office at B-128, First Floor, Sector-2, Gautam Buddha Nagar, Uttar Pradesh 201301.</p>
           The terms “you” and “your” refer to the user of the Platform.
           Our Services and these Terms comply with the Indian Penal Code, 1860, the Information Technology Act, 2000, and related rules. By using our Platform, you agree to these Terms. If you are using the Platform outside India, you are responsible for ensuring compliance with local laws.
         </p>
@@ -114,7 +114,7 @@ export default function TermsOfUse() {
 
         {/* Intro */}
         <p style={text}>
-          <strong>ChatSpark</strong> is a mobile application offering:
+          <strong>Hangout</strong> is a mobile application offering:
         </p>
 
         {/* Bullet List */}
@@ -178,7 +178,7 @@ export default function TermsOfUse() {
       <div style={section}>
         <h2 style={heading}>How to Use Our Services</h2>
         <p style={text}>
-          To use ChatSpark, download the App and register using your mobile number. You may be required to verify your account through a One-Time Password (OTP) sent via SMS.
+          To use Hangout, download the App and register using your mobile number. You may be required to verify your account through a One-Time Password (OTP) sent via SMS.
           Once registered, you can access 1:1 audio calling, private chat, and astrology services, subject to these Terms. Some features may require wallet recharge, subscription, or in-app purchases to unlock or continue using them. By using our Services, you agree to comply with these Terms and all applicable laws and regulations.
 
         </p>
@@ -238,7 +238,7 @@ export default function TermsOfUse() {
         <p style={text}>
           We may remove content violating our guidelines. Repeated offenses can lead
           to permanent account termination. Appeals may be sent to{" "}
-          <span style={{ color: colors.accent }}>grievance@chatspark.in</span>.
+          <span style={{ color: colors.accent }}>grievance@hangoutclub.in</span>.
         </p>
 
         {/* d */}
@@ -306,7 +306,7 @@ export default function TermsOfUse() {
 
         <p style={text}>
           Violations can be reported via in-app tools or{" "}
-          <span style={{ color: colors.accent }}>grievance@chatspark.in</span>.
+          <span style={{ color: colors.accent }}>grievance@hangoutclub.in</span>.
         </p>
       </div>
 
@@ -333,7 +333,7 @@ export default function TermsOfUse() {
           <span style={{ fontWeight: "700", color: colors.accent }}>Address:</span> HangoutX Media Private Limited, B-128,
           First Floor, Sector-2, Gautam Buddha Nagar, Uttar Pradesh 201301 <br />
           <span style={{ fontWeight: "700", color: colors.accent }}>Email:</span>{" "}
-          <span style={{ color: colors.accent }}>grievance@chatspark.in</span>
+          <span style={{ color: colors.accent }}>grievance@hangoutclub.in</span>
         </p>
 
         <p style={text}>
@@ -342,7 +342,7 @@ export default function TermsOfUse() {
           </span>{" "}
           Mr. Ayush Kumar <br />
           <span style={{ fontWeight: "700", color: colors.accent }}>Email:</span>{" "}
-          <span style={{ color: colors.accent }}>nodalofficer@chatspark.in</span>
+          <span style={{ color: colors.accent }}>nodalofficer@hangoutclub.in</span>
         </p>
 
         <p style={text}>

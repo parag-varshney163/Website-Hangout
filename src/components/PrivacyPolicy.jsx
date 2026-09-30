@@ -71,13 +71,13 @@ export default function PrivacyPolicy() {
             textAlign: "center",
           }}
         >
-          Privacy Policy for ChatSpark
+          Privacy Policy for Hangout
         </h1>
 
         {/* Intro */}
         <div style={section}>
-          <p className="text-center" style={subHeading}>Effective Date: 1st December, 2025 <br/>
-              Last Updated: 1st December, 2025</p>
+          <p className="text-center" style={subHeading}>Effective Date: 1st October, 2026 <br/>
+              Last Updated: 1st October, 2026</p>
           <p style={text}>
             This Privacy Policy (“Policy”) explains how{" "}
             <strong style={{ color: colors.textPrimary }}>
@@ -92,7 +92,7 @@ export default function PrivacyPolicy() {
           </p>
 
           <p style={text}>
-            By using ChatSpark, you agree to the collection and use of your
+            By using Hangout, you agree to the collection and use of your
             information as described in this Policy. This Policy complies with
             the <strong>Information Technology Act, 2000</strong>, the{" "}
             <strong>Information Technology (Intermediary Guidelines and Digital
@@ -118,7 +118,7 @@ export default function PrivacyPolicy() {
           <ul style={list}>
             <li>
               <strong>Registration Information:</strong> When you register on
-              ChatSpark, we collect your mobile number, email address, or
+              Hangout, we collect your mobile number, email address, or
               third-party login details (e.g., Google, Apple).
             </li>
             <li>
@@ -139,8 +139,8 @@ export default function PrivacyPolicy() {
             <li>
               <strong>Communications:</strong> Any messages, feedback, or
               complaints submitted via in-app support, email (e.g.,{" "}
-              <span style={accentLink}>grievance@chatspark.in</span>), In-App
-              chat, or Customer Support (support@chatspark.in).
+              <span style={accentLink}>grievance@hangoutclub.in</span>), In-App
+              chat, or Customer Support (support@hangoutclub.in).
             </li>
           </ul>
 
@@ -334,7 +334,7 @@ export default function PrivacyPolicy() {
             <li>
               <strong>Access and Correction:</strong> You can access or correct
               your personal details via in-app profile settings or by emailing{" "}
-              <span style={accentLink}>grievance@chatspark.in</span>.
+              <span style={accentLink}>grievance@hangoutclub.in</span>.
             </li>
             <li>
               <strong>Deletion:</strong> You may delete your account from the
@@ -346,7 +346,7 @@ export default function PrivacyPolicy() {
             </li>
             <li>
               <strong>Grievance Redressal:</strong> You may report content or raise data-related concerns through the in-app chat or support@chatspark.in.
-              <a style={accentLink} href="https://support.chatspark.in">
+              <a style={accentLink} href="https://support.hangoutclub.in">
                 
               </a>
               .
@@ -385,13 +385,13 @@ export default function PrivacyPolicy() {
         <div style={section}>
           <h2 style={heading}>9. Children's Privacy</h2>
           <p style={text}>
-           ChatSpark is intended exclusively for users aged 18 years and above. We do not knowingly collect, use, or share personal information from individuals under 18. If we become aware that a user is under 18, we will immediately delete their account and associated data. If you believe a minor has provided us with personal information, please contact us at grievance@chatspark.in.
+           Hangout is intended exclusively for users aged 18 years and above. We do not knowingly collect, use, or share personal information from individuals under 18. If we become aware that a user is under 18, we will immediately delete their account and associated data. If you believe a minor has provided us with personal information, please contact us at grievance@chatspark.in.
           </p>
         </div>
          <div style={section}>
         <h2 style={heading}>10. Ban Policy</h2>
         <p style={text}>
-          ChatSpark maintains a zero-tolerance policy toward any activity that endangers the safety of users, particularly minors. Any user found impersonating a minor, attempting to contact or exploit minors, engaging in grooming behavior, sharing child sexual abuse material (CSAM), or otherwise violating applicable child safety laws will have their account permanently suspended or terminated. Where required by applicable law, ChatSpark may preserve relevant information and report such activity to the appropriate law enforcement or regulatory authorities.
+          Hangout maintains a zero-tolerance policy toward any activity that endangers the safety of users, particularly minors. Any user found impersonating a minor, attempting to contact or exploit minors, engaging in grooming behavior, sharing child sexual abuse material (CSAM), or otherwise violating applicable child safety laws will have their account permanently suspended or terminated. Where required by applicable law, ChatSpark may preserve relevant information and report such activity to the appropriate law enforcement or regulatory authorities.
         </p>
       </div>
 
@@ -410,16 +410,16 @@ export default function PrivacyPolicy() {
             First Floor, Sector-2, Gautam Buddha Nagar, Uttar Pradesh 201301
             <br />
             <strong>Email:</strong>{" "}
-            <span style={accentLink}>grievance@chatspark.in</span>
+            <span style={accentLink}>grievance@hangoutclub.in</span>
             <br />
             <strong>Nodal Officer (for law enforcement only):</strong>{" "}
-            <span style={accentLink}>nodalofficer@chatspark.in</span>
+            <span style={accentLink}>nodalofficer@hangoutclub.in</span>
           </p>
 
           <p style={text}>
             You can also reach us via{" "}
             <a style={accentLink} >
-              support@chatspark.in
+              support@hangoutclub.in
             </a>
             . We aim to address all valid complaints within{" "}
             <strong style={{ color: colors.textPrimary }}>15 days</strong>.
@@ -453,7 +453,7 @@ export default function PrivacyPolicy() {
             201301
             <br />
             <strong>Email:</strong>{" "}
-            <span style={accentLink}>support@chatspark.in</span>
+            <span style={accentLink}>support@hangoutclub.in</span>
           </p>
         </div>
       </div>

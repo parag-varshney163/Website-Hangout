@@ -64,7 +64,7 @@ export default function RefundPolicy() {
 
         {/* Intro */}
         <p style={{ ...textStyle, marginBottom: "35px", textAlign: "center" }}>
-          This Refund Policy governs the refund process for services provided by <strong style={{color:colors.accent}}>ChatSpark</strong>, a mobile application operated by <strong style={{color:colors.accent}}>HangoutX Media Private Limited</strong> (“Company,” “we,” “us,” or “our”), with its registered office at <strong style={{color:colors.accent}}>B-128, First Floor, Sector-2, Gautam Buddha Nagar, Uttar Pradesh 201301</strong>. This policy applies to purchases and transactions made using CS Coin, the virtual currency of the ChatSpark platform (“Platform”), for 1:1 audio calls and interactive pass-based features.
+          This Refund Policy governs the refund process for services provided by <strong style={{color:colors.accent}}>Hangout</strong>, a mobile application operated by <strong style={{color:colors.accent}}>HangoutX Media Private Limited</strong> (“Company,” “we,” “us,” or “our”), with its registered office at <strong style={{color:colors.accent}}>B-128, First Floor, Sector-2, Gautam Buddha Nagar, Uttar Pradesh 201301</strong>. This policy applies to purchases and transactions made using CS Coin, the virtual currency of the ChatSpark platform (“Platform”), for 1:1 audio calls and interactive pass-based features.
         </p>
 
         {/* General Refund Conditions */}
@@ -153,8 +153,8 @@ export default function RefundPolicy() {
         <div style={sectionStyle}>
           <h2 style={headingStyle}>Contact for Refund Requests</h2>
           <p style={textStyle}>
-            Email: <span style={{ color: colors.accent }}>support@chatspark.co</span> <br />
-            Chatbot: <a href="https://support.chatspark.in" style={{ color: colors.accent }}>https://support.chatspark.in</a> <br />
+            Email: <span style={{ color: colors.accent }}>support@hangoutclub.in</span> <br />
+            Chatbot: <a href="https://support.hangoutclub.in" style={{ color: colors.accent }}>https://support.hangoutclub.in</a> <br />
             Response Time: We aim to acknowledge refund requests within 15 days, with approved refunds processed within 10 business days.
           </p>
         </div>
@@ -163,7 +163,7 @@ export default function RefundPolicy() {
         <div style={sectionStyle}>
           <h2 style={headingStyle}>Disclaimer</h2>
           <p style={textStyle}>
-            HangoutX Media Private Limited strives to deliver a seamless experience through ChatSpark’s audio and interactive services. However, we are not liable for losses or damages resulting from user errors, poor connectivity, or factors beyond our control. Users are responsible for ensuring stable connections and compatible devices before using the Platform.
+            HangoutX Media Private Limited strives to deliver a seamless experience through Hangout's audio and interactive services. However, we are not liable for losses or damages resulting from user errors, poor connectivity, or factors beyond our control. Users are responsible for ensuring stable connections and compatible devices before using the Platform.
           </p>
         </div>
       </div>

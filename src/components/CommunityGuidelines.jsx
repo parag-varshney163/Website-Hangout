@@ -69,7 +69,7 @@ export default function CommunityGuidelines() {
         <div style={section}>
           <h2 style={heading}>1. Why We Have These Guidelines</h2>
           <p style={text}>
-            ChatSpark is built to be a space for meaningful, kind, and respectful
+            Hangout is built to be a space for meaningful, kind, and respectful
             connections — where people can talk, share, support, and connect in a
             safe, inclusive environment. These rules help ensure that everyone
             feels secure, respected, and free from harm or harassment.
@@ -84,7 +84,7 @@ export default function CommunityGuidelines() {
         {/* 2. WHO CAN USE CHATSPARK */}
         {/* ============================================================= */}
         <div style={section}>
-          <h2 style={heading}>2. Who Can Use ChatSpark (Eligibility & Profiles)</h2>
+          <h2 style={heading}>2. Who Can Use Hangout (Eligibility & Profiles)</h2>
           <p style={text}>
             • Users must be 18 years or older. Accounts belonging to minors are strictly prohibited.{"\n"}
             • Misrepresenting age is forbidden.{"\n"}
@@ -154,7 +154,7 @@ export default function CommunityGuidelines() {
         {/* 5. USING PLATFORM */}
         {/* ============================================================= */}
         <div style={section}>
-          <h2 style={heading}>5. Using ChatSpark as Intended</h2>
+          <h2 style={heading}>5. Using Hangout as Intended</h2>
           <p style={text}>
             Use the platform for genuine social interaction — meaningful
             conversations, meeting new people, sharing experiences, and support.
@@ -199,7 +199,7 @@ export default function CommunityGuidelines() {
         <div style={section}>
           <h2 style={heading}>8. Legal Compliance & Liability</h2>
           <p style={text}>
-            Users must comply with all applicable laws. ChatSpark functions as an
+            Users must comply with all applicable laws. Hangout functions as an
             intermediary platform and is not liable for user-generated content
             except where required by law. We may suspend or remove accounts that
             violate guidelines, pose security risks, or are required by law.
@@ -247,7 +247,7 @@ export default function CommunityGuidelines() {
           <p style={text}>
             If you believe any moderation action was a mistake, contact our
             grievance officer at:{"\n"}
-            <span style={{ color: colors.accent }}>grievance@chatspark.in</span>
+            <span style={{ color: colors.accent }}>grievance@hangoutclub.in</span>
           </p>
         </div>
 

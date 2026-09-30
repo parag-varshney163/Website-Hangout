@@ -1,5 +1,7 @@
 import React from "react";
+
 import colors from "../constants/colors";
+
 
 export default function DeletionPolicy() {
   const sections = [
@@ -10,10 +12,10 @@ export default function DeletionPolicy() {
       ],
     },
     {
-      title: "1. How do I delete my ChatSpark account?",
+      title: "1. How do I delete my Hangout account?",
       content: [
         "To initiate account deletion:",
-        "• Open the ChatSpark app and go to Settings",
+        "• Open the Hangout app and go to Settings",
         "• Tap on 'Delete Account'",
         "• Select the reason for deletion",
         "• Tap 'Submit'",
@@ -32,7 +34,7 @@ export default function DeletionPolicy() {
       title: "3. Can I cancel my deletion request?",
       content: [
         "Yes, but only within 12 hours of submitting the request.",
-        "To cancel, contact ChatSpark support through the app within the 12-hour grace period.",
+        "To cancel, contact Hangout support through the app within the 12-hour grace period.",
         "After 12 hours, the deletion process cannot be stopped and your account will be permanently deleted within 12–24 hours.",
       ],
     },
@@ -40,7 +42,7 @@ export default function DeletionPolicy() {
       title: "4. How can I download my account data?",
       content: [
         "Data download is available on request.",
-        "You can request a copy of your account data by emailing support@chatspark.in within 7 days of submitting your deletion request.",
+        "You can request a copy of your account data by emailing support@hangoutclub.in within 7 days of submitting your deletion request.",
         "We'll provide data related to your account, including profile details, transaction history, and other information you provided during registration.",
         "Important notes:",
         "• Requests must be made within 7 days of deletion request",
@@ -61,7 +63,7 @@ export default function DeletionPolicy() {
       title: "Need Help?",
       content: [
         "If you are facing issues or have questions about account deletion, please contact our support team through the ChatSpark app before deleting your account.",
-        "You can also reach us at support@chatspark.in.",
+        "You can also reach us at support@hangoutclub.in.",
       ],
     },
   ];

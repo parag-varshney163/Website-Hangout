@@ -760,12 +760,12 @@ export default function HeroSection() {
                 text={colors.buttonText}
                 icon={Download}
                 size="lg"
-                onClick={() =>
-                  window.open(
-                    "https://play.google.com/store/apps/details?id=com.chatspark.user",
-                    "_blank"
-                  )
-                }
+                // onClick={() =>
+                //   window.open(
+                //     "https://play.google.com/store/apps/details?id=com.chatspark.user",
+                //     "_blank"
+                //   )
+                // }
               >
                 Download Hangout
               </Button>

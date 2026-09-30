@@ -15,7 +15,7 @@ export default function FAQ() {
     },
     {
       q: "Is my KYC data safe?",
-      a: "Yes. All KYC information is encrypted and stored securely. ChatSpark complies with government data protection standards.",
+      a: "Yes. All KYC information is encrypted and stored securely. Hangout complies with government data protection standards.",
     },
     {
       q: "Refund Policy",
@@ -27,7 +27,7 @@ export default function FAQ() {
     },
     {
       q: "What is CS Coin?",
-      a: "CS Coin is ChatSpark’s in-app currency. Use it to make calls, buy Smart Passes, or unlock premium experiences.",
+      a: "CS Coin is Hangout's in-app currency. Use it to make calls, buy Smart Passes, or unlock premium experiences.",
     },
     {
       q: "How can I buy CS Coins?",
@@ -39,7 +39,7 @@ export default function FAQ() {
     },
     {
       q: "How do I report technical issues?",
-      a: "Report issues through the in-app Support option or email support@chatspark.in with screenshots.",
+      a: "Report issues through the in-app Support option or email support@hangoutclub.in with screenshots.",
     },
   ];
 

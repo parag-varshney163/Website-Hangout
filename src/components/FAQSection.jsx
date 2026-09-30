@@ -13,14 +13,14 @@ const faqs = [
       "Absolutely. We Use Advanced Security Measures To Protect Your Data And Ensure A Safe, Respectful Community.",
   },
   {
-    question: "How Can I Earn On ChatSpark?",
+    question: "How Can I Earn On Hangout?",
     answer:
       "You Can Earn By Becoming A Creator And Earn During Audio Conversations.",
   },
   {
     question: "What Is CS Coin?",
     answer:
-      "CS Coin Is ChatSpark's In-App Currency. Use It To Make Calls Or Unlock Premium Experiences.",
+      "CS Coin Is Hangout's In-App Currency. Use It To Make Calls Or Unlock Premium Experiences.",
   },
   {
     question: "How Can I Buy CS Coins?",

@@ -64,18 +64,18 @@ export default function ChildSafetyPolicy() {
 
                 {/* INTRO */}
                 <p style={{ ...textStyle, marginBottom: "35px", textAlign: "center" }}>
-                    <strong style={{ color: colors.accent }}>ChatSpark — Challenge & Connect</strong> <br />
+                    <strong style={{ color: colors.accent }}>Hangout </strong> <br />
                     HangoutX Media Private Limited <br />
-                    Effective Date: 1st December, 2025
+                    Effective Date: 1st October, 2026
                 </p>
 
                 {/* SECTION 1 */}
                 <div style={sectionStyle}>
                     <h2 style={headingStyle}>1. Our Commitment Against CSAE</h2>
                     <p style={textStyle}>
-                        ChatSpark, operated by HangoutX Media Private Limited, has a zero-tolerance policy
+                        Hangoutclub, operated by HangoutX Media Private Limited, has a zero-tolerance policy
                         toward Child Sexual Abuse and Exploitation (CSAE) in any form. Any content, behavior,
-                        communication, or activity on the ChatSpark platform that sexually exploits, abuses, or
+                        communication, or activity on the Hangoutclub platform that sexually exploits, abuses, or
                         endangers minors is strictly prohibited and will result in immediate account termination,
                         permanent ban, and reporting to law enforcement authorities.
                     </p>
@@ -85,7 +85,7 @@ export default function ChildSafetyPolicy() {
                 <div style={sectionStyle}>
                     <h2 style={headingStyle}>2. Prohibited Content & Behavior</h2>
                     <p style={textStyle}>
-                        The following are strictly prohibited on ChatSpark:<br />
+                        The following are strictly prohibited on Hangout:<br />
                         • Child Sexual Abuse Material (CSAM) of any kind <br />
                         • Any Content that sexualizes,exploits ,or endangers minors <br />
                         • Grooming behavior toward minors <br />
@@ -98,7 +98,7 @@ export default function ChildSafetyPolicy() {
                 <div style={sectionStyle}>
                     <h2 style={headingStyle}>3. Platform Age Restriction</h2>
                     <p style={textStyle}>
-                        ChatSpark is exclusively intended for users aged 18 years and above. We do not
+                        Hangout is exclusively intended for users aged 18 years and above. We do not
                         knowingly allow, collect, or process personal information from individuals under the age
                         of 18. If we become aware that a user is a minor, their account will be immediately
                         terminated and all associated data deleted.
@@ -110,7 +110,7 @@ export default function ChildSafetyPolicy() {
                     <h2 style={headingStyle}>4. In-App Reporting Mechanism</h2>
 
                     <p style={textStyle}>
-                        ChatSpark provides users with accessible, in-app tools to report violations:
+                        Hangout provides users with accessible, in-app tools to report violations:
                     </p>
 
                     <p style={textStyle}>
@@ -137,7 +137,7 @@ export default function ChildSafetyPolicy() {
                 <div style={sectionStyle}>
                     <h2 style={headingStyle}>6. Content Moderation</h2>
                     <p style={textStyle}>
-                        ChatSpark employs AI-powered content moderation including audio transcription and
+                        Hangout employs AI-powered content moderation including audio transcription and
                         analysis to detect and remove policy-violating content. Our moderation systems are
                         designed to proactively identify CSAE-related content and behavior before it causes
                         harm.
@@ -146,7 +146,7 @@ export default function ChildSafetyPolicy() {
                 <div style={sectionStyle}>
                     <h2 style={headingStyle}>7. Ban Policy</h2>
                     <p style={textStyle}>
-                        ChatSpark maintains a zero-tolerance policy toward any activity that endangers the safety of users, particularly minors. Any user found impersonating a minor, attempting to contact or exploit minors, engaging in grooming behavior, sharing child sexual abuse material (CSAM), or otherwise violating applicable child safety laws will have their account permanently suspended or terminated. Where required by applicable law, ChatSpark may preserve relevant information and report such activity to the appropriate law enforcement or regulatory authorities.
+                        Hangout maintains a zero-tolerance policy toward any activity that endangers the safety of users, particularly minors. Any user found impersonating a minor, attempting to contact or exploit minors, engaging in grooming behavior, sharing child sexual abuse material (CSAM), or otherwise violating applicable child safety laws will have their account permanently suspended or terminated. Where required by applicable law, ChatSpark may preserve relevant information and report such activity to the appropriate law enforcement or regulatory authorities.
                     </p>
                 </div>
 
@@ -163,13 +163,13 @@ export default function ChildSafetyPolicy() {
                         <span style={{ color: colors.accent }}>Mr. Ayush Kumar</span> <br />
 
                         • <strong>Email:</strong>{" "}
-                        <span style={{ color: colors.accent }}>grievance@chatspark.in</span> <br />
+                        <span style={{ color: colors.accent }}>grievance@hangoutclub.in</span> <br />
 
                         • <strong>Support:</strong>{" "}
-                        <span style={{ color: colors.accent }}>support@chatspark.in</span> <br />
+                        <span style={{ color: colors.accent }}>support@hangoutclub.in</span> <br />
 
                         • <strong>Nodal Officer (Law Enforcement):</strong>{" "}
-                        <span style={{ color: colors.accent }}>nodalofficer@chatspark.in</span> <br />
+                        <span style={{ color: colors.accent }}>nodalofficer@hangoutclub.in</span> <br />
 
                         • <strong>Address:</strong> HangoutX Media Private Limited, B-128, First Floor,
                         Sector-2, Gautam Buddha Nagar, Uttar Pradesh 201301, India <br />
