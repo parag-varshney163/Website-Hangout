@@ -11,6 +11,7 @@ import WhyChooseCards from './components/WhyChooseCards';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import WhyChatSpark from './components/WhyChatSpark';
 import RefundPolicy from './components/RefundPolicy';
+import ScrollToTop from './components/ScrollToTop';
 import HeroSection from './components/HeroSection';
 import DownloadCTA from './components/DownloadCTA';
 import DeletionPolicy from './components/deletion'; // ✅ IMPORTANT
@@ -28,6 +29,7 @@ import FAQ from './components/FAQ';
 function App() {
   return (
     <BrowserRouter>
+    <ScrollToTop />
       <div
         style={{
           background: colors.gradientVertical,

@@ -8,7 +8,7 @@ export default function DeletionPolicy() {
     {
       title: "Account Deletion",
       content: [
-        "Last updated: 1st December, 2025",
+        "Last updated: 1st October, 2026",
       ],
     },
     {
